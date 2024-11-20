@@ -2,6 +2,16 @@
   "layouts_table_label": "gMapLayouts",
   "layouts": [
     {
+      "id": "LAYOUT_DEMO_TOWN",
+      "name": "DemoTown_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/DemoTown/border.bin",
+      "blockdata_filepath": "data/layouts/DemoTown/map.bin"
+    },
+    {
       "id": "LAYOUT_PETALBURG_CITY",
       "name": "PetalburgCity_Layout",
       "width": 30,
@@ -4410,16 +4420,6 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
-    },
-    {
-      "id": "LAYOUT_DEMO_TOWN",
-      "name": "DemoTown_Layout",
-      "width": 40,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/DemoTown/border.bin",
-      "blockdata_filepath": "data/layouts/DemoTown/map.bin"
     }
   ]
 }

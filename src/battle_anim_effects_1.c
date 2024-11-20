@@ -5495,8 +5495,8 @@ static void AnimMilkBottle_Step2(struct Sprite *sprite, int unk1, int unk2)
 
 void AnimGrantingStars(struct Sprite *sprite)
 {
-    if (!gBattleAnimArgs[2])
-        SetSpriteCoordsToAnimAttackerCoords(sprite);
+    if (!InitSpritePosToAnimBattler(gBattleAnimArgs[2], sprite, FALSE))
+        return;
 
     SetAnimSpriteInitialXOffset(sprite, gBattleAnimArgs[0]);
     sprite->y += gBattleAnimArgs[1];
@@ -6616,7 +6616,7 @@ static void ReloadBattlerSprites(u32 battler, struct Pokemon *party)
     UpdateIndicatorVisibilityAndType(gHealthboxSpriteIds[battler], TRUE);
 
     // Try to recreate shadow sprite
-    if (B_ENEMY_MON_SHADOW_STYLE >= GEN_4)
+    if (B_ENEMY_MON_SHADOW_STYLE >= GEN_4 && P_GBA_STYLE_SPECIES_GFX == FALSE)
     {
         // Both of these *should* be true, but use an OR just to be certain
         if (gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary < MAX_SPRITES

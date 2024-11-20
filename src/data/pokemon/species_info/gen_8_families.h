@@ -191,7 +191,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_RILLABOOM_GIGANTAMAX] =
+    [SPECIES_RILLABOOM_GMAX] =
     {
         .baseHP        = 100,
         .baseAttack    = 125,
@@ -224,18 +224,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 0,
         .trainerScale = 365,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_RillaboomGigantamax,
+        .frontPic = gMonFrontPic_RillaboomGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_RillaboomGigantamax,
+        .frontAnimFrames = sAnims_RillaboomGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_RillaboomGigantamax,
+        .backPic = gMonBackPic_RillaboomGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_RillaboomGigantamax,
-        .shinyPalette = gMonShinyPalette_RillaboomGigantamax,
-        .iconSprite = gMonIcon_RillaboomGigantamax,
+        .palette = gMonPalette_RillaboomGmax,
+        .shinyPalette = gMonShinyPalette_RillaboomGmax,
+        .iconSprite = gMonIcon_RillaboomGmax,
         .iconPalIndex = 1,
         SHADOW(0, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Rillaboom)
@@ -437,7 +437,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_CINDERACE_GIGANTAMAX] =
+    [SPECIES_CINDERACE_GMAX] =
     {
         .baseHP        = 80,
         .baseAttack    = 116,
@@ -471,18 +471,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CinderaceGigantamax,
+        .frontPic = gMonFrontPic_CinderaceGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_CinderaceGigantamax,
+        .frontAnimFrames = sAnims_CinderaceGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CinderaceGigantamax,
+        .backPic = gMonBackPic_CinderaceGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CinderaceGigantamax,
-        .shinyPalette = gMonShinyPalette_CinderaceGigantamax,
-        .iconSprite = gMonIcon_CinderaceGigantamax,
+        .palette = gMonPalette_CinderaceGmax,
+        .shinyPalette = gMonShinyPalette_CinderaceGmax,
+        .iconSprite = gMonIcon_CinderaceGmax,
         .iconPalIndex = 0,
         SHADOW(-3, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Cinderace)
@@ -685,7 +685,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_INTELEON_GIGANTAMAX] =
+    [SPECIES_INTELEON_GMAX] =
     {
         .baseHP        = 70,
         .baseAttack    = 85,
@@ -719,18 +719,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 1,
         .trainerScale = 326,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_InteleonGigantamax,
+        .frontPic = gMonFrontPic_InteleonGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_InteleonGigantamax,
+        .frontAnimFrames = sAnims_InteleonGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_InteleonGigantamax,
+        .backPic = gMonBackPic_InteleonGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_InteleonGigantamax,
-        .shinyPalette = gMonShinyPalette_InteleonGigantamax,
-        .iconSprite = gMonIcon_InteleonGigantamax,
+        .palette = gMonPalette_InteleonGmax,
+        .shinyPalette = gMonShinyPalette_InteleonGmax,
+        .iconSprite = gMonIcon_InteleonGmax,
         .iconPalIndex = 0,
         SHADOW(-5, 12, SHADOW_SIZE_L)
         FOOTPRINT(Inteleon)
@@ -899,8 +899,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .description = COMPOUND_STRING(
             "It will bravely challenge any opponent,\n"
             "no matter how powerful. This Pokémon\n"
-            "benefits from every battle--even a defeat\n"
-            "increases its strength a bit."),
+            "benefits from every battle--even a\n"
+            "defeat increases its strength a bit."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
@@ -1061,7 +1061,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_CORVIKNIGHT_GIGANTAMAX] =
+    [SPECIES_CORVIKNIGHT_GMAX] =
     {
         .baseHP        = 98,
         .baseAttack    = 87,
@@ -1095,18 +1095,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 0,
         .trainerScale = 348,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_CorviknightGigantamax,
+        .frontPic = gMonFrontPic_CorviknightGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_CorviknightGigantamax,
+        .frontAnimFrames = sAnims_CorviknightGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CorviknightGigantamax,
+        .backPic = gMonBackPic_CorviknightGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CorviknightGigantamax,
-        .shinyPalette = gMonShinyPalette_CorviknightGigantamax,
-        .iconSprite = gMonIcon_CorviknightGigantamax,
+        .palette = gMonPalette_CorviknightGmax,
+        .shinyPalette = gMonShinyPalette_CorviknightGmax,
+        .iconSprite = gMonIcon_CorviknightGmax,
         .iconPalIndex = 0,
         SHADOW(2, 8, SHADOW_SIZE_L)
         FOOTPRINT(Corviknight)
@@ -1312,7 +1312,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_ORBEETLE_GIGANTAMAX] =
+    [SPECIES_ORBEETLE_GMAX] =
     {
         .baseHP        = 60,
         .baseAttack    = 45,
@@ -1339,26 +1339,26 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 140,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Its brain has grown to a\n"
-            "gargantuan size, as has the rest of its body.\n"
+            "Its brain has grown to a gargantuan\n"
+            "size, as has the rest of its body.\n"
             "This Pokémon's intellect and\n"
             "psychic abilities are overpowering."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_OrbeetleGigantamax,
+        .frontPic = gMonFrontPic_OrbeetleGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_OrbeetleGigantamax,
+        .frontAnimFrames = sAnims_OrbeetleGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_OrbeetleGigantamax,
+        .backPic = gMonBackPic_OrbeetleGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_OrbeetleGigantamax,
-        .shinyPalette = gMonShinyPalette_OrbeetleGigantamax,
-        .iconSprite = gMonIcon_OrbeetleGigantamax,
+        .palette = gMonPalette_OrbeetleGmax,
+        .shinyPalette = gMonShinyPalette_OrbeetleGmax,
+        .iconSprite = gMonIcon_OrbeetleGmax,
         .iconPalIndex = 0,
         SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Orbeetle)
@@ -1875,7 +1875,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_DREDNAW_GIGANTAMAX] =
+    [SPECIES_DREDNAW_GMAX] =
     {
         .baseHP        = 90,
         .baseAttack    = 115,
@@ -1909,18 +1909,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_DrednawGigantamax,
+        .frontPic = gMonFrontPic_DrednawGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_DrednawGigantamax,
+        .frontAnimFrames = sAnims_DrednawGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_DrednawGigantamax,
+        .backPic = gMonBackPic_DrednawGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 12,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_DrednawGigantamax,
-        .shinyPalette = gMonShinyPalette_DrednawGigantamax,
-        .iconSprite = gMonIcon_DrednawGigantamax,
+        .palette = gMonPalette_DrednawGmax,
+        .shinyPalette = gMonShinyPalette_DrednawGmax,
+        .iconSprite = gMonIcon_DrednawGmax,
         .iconPalIndex = 0,
         SHADOW(2, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Drednaw)
@@ -2248,7 +2248,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_COALOSSAL_GIGANTAMAX] =
+    [SPECIES_COALOSSAL_GMAX] =
     {
         .baseHP        = 110,
         .baseAttack    = 80,
@@ -2282,18 +2282,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CoalossalGigantamax,
+        .frontPic = gMonFrontPic_CoalossalGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_CoalossalGigantamax,
+        .frontAnimFrames = sAnims_CoalossalGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CoalossalGigantamax,
+        .backPic = gMonBackPic_CoalossalGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CoalossalGigantamax,
-        .shinyPalette = gMonShinyPalette_CoalossalGigantamax,
-        .iconSprite = gMonIcon_CoalossalGigantamax,
+        .palette = gMonPalette_CoalossalGmax,
+        .shinyPalette = gMonShinyPalette_CoalossalGmax,
+        .iconSprite = gMonIcon_CoalossalGmax,
         .iconPalIndex = 0,
         SHADOW(1, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Coalossal)
@@ -2437,7 +2437,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_FLAPPLE_GIGANTAMAX] =
+    [SPECIES_FLAPPLE_GMAX] =
     {
         .baseHP        = 70,
         .baseAttack    = 110,
@@ -2471,18 +2471,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_FlappleGigantamax,
+        .frontPic = gMonFrontPic_FlappleGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_FlappleGigantamax,
+        .frontAnimFrames = sAnims_FlappleGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_FlappleGigantamax,
+        .backPic = gMonBackPic_FlappleGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_FlappleGigantamax,
-        .shinyPalette = gMonShinyPalette_FlappleGigantamax,
-        .iconSprite = gMonIcon_FlappleGigantamax,
+        .palette = gMonPalette_FlappleGmax,
+        .shinyPalette = gMonShinyPalette_FlappleGmax,
+        .iconSprite = gMonIcon_FlappleGmax,
         .iconPalIndex = 1,
         SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Flapple)
@@ -2557,7 +2557,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_APPLETUN_GIGANTAMAX] =
+    [SPECIES_APPLETUN_GMAX] =
     {
         .baseHP        = 110,
         .baseAttack    = 85,
@@ -2591,18 +2591,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_AppletunGigantamax,
+        .frontPic = gMonFrontPic_AppletunGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_AppletunGigantamax,
+        .frontAnimFrames = sAnims_AppletunGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_AppletunGigantamax,
+        .backPic = gMonBackPic_AppletunGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_AppletunGigantamax,
-        .shinyPalette = gMonShinyPalette_AppletunGigantamax,
-        .iconSprite = gMonIcon_AppletunGigantamax,
+        .palette = gMonPalette_AppletunGmax,
+        .shinyPalette = gMonShinyPalette_AppletunGmax,
+        .iconSprite = gMonIcon_AppletunGmax,
         .iconPalIndex = 1,
         SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Appletun)
@@ -2866,7 +2866,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_SANDACONDA_GIGANTAMAX] =
+    [SPECIES_SANDACONDA_GMAX] =
     {
         .baseHP        = 72,
         .baseAttack    = 107,
@@ -2900,18 +2900,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 0,
         .trainerScale = 610,
         .trainerOffset = 17,
-        .frontPic = gMonFrontPic_SandacondaGigantamax,
+        .frontPic = gMonFrontPic_SandacondaGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SandacondaGigantamax,
+        .frontAnimFrames = sAnims_SandacondaGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SandacondaGigantamax,
+        .backPic = gMonBackPic_SandacondaGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SandacondaGigantamax,
-        .shinyPalette = gMonShinyPalette_SandacondaGigantamax,
-        .iconSprite = gMonIcon_SandacondaGigantamax,
+        .palette = gMonPalette_SandacondaGmax,
+        .shinyPalette = gMonShinyPalette_SandacondaGmax,
+        .iconSprite = gMonIcon_SandacondaGmax,
         .iconPalIndex = 1,
         SHADOW(0, 14, SHADOW_SIZE_M)
         FOOTPRINT(Sandaconda)
@@ -3356,7 +3356,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_TOXTRICITY_AMPED_GIGANTAMAX] =
+    [SPECIES_TOXTRICITY_AMPED_GMAX] =
     {
         .baseHP        = 75,
         .baseAttack    = 98,
@@ -3386,18 +3386,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 1,
         .trainerScale = 296,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_ToxtricityGigantamax,
+        .frontPic = gMonFrontPic_ToxtricityGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_ToxtricityGigantamax,
+        .frontAnimFrames = sAnims_ToxtricityGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ToxtricityGigantamax,
+        .backPic = gMonBackPic_ToxtricityGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ToxtricityGigantamax,
-        .shinyPalette = gMonShinyPalette_ToxtricityGigantamax,
-        .iconSprite = gMonIcon_ToxtricityGigantamax,
+        .palette = gMonPalette_ToxtricityGmax,
+        .shinyPalette = gMonShinyPalette_ToxtricityGmax,
+        .iconSprite = gMonIcon_ToxtricityGmax,
         .iconPalIndex = 0,
         SHADOW(1, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Toxtricity)
@@ -3472,7 +3472,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_TOXTRICITY_LOW_KEY_GIGANTAMAX] =
+    [SPECIES_TOXTRICITY_LOW_KEY_GMAX] =
     {
         .baseHP        = 75,
         .baseAttack    = 98,
@@ -3502,29 +3502,21 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 1,
         .trainerScale = 296,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_ToxtricityGigantamax,
+        .frontPic = gMonFrontPic_ToxtricityGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_ToxtricityGigantamax,
+        .frontAnimFrames = sAnims_ToxtricityGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ToxtricityGigantamax,
+        .backPic = gMonBackPic_ToxtricityGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ToxtricityGigantamax,
-        .shinyPalette = gMonShinyPalette_ToxtricityGigantamax,
-        .iconSprite = gMonIcon_ToxtricityGigantamax,
+        .palette = gMonPalette_ToxtricityGmax,
+        .shinyPalette = gMonShinyPalette_ToxtricityGmax,
+        .iconSprite = gMonIcon_ToxtricityGmax,
         .iconPalIndex = 0,
         SHADOW(1, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Toxtricity)
-        OVERWORLD(
-            sPicTable_ToxtricityLowKey,
-            SIZE_32x32,
-            SHADOW_SIZE_M,
-            TRACKS_FOOT,
-            gOverworldPalette_ToxtricityLowKey,
-            gShinyOverworldPalette_ToxtricityLowKey
-        )
         .isGigantamax = TRUE,
         .levelUpLearnset = sToxtricityLowKeyLevelUpLearnset,
         .teachableLearnset = sToxtricityLowKeyTeachableLearnset,
@@ -3661,7 +3653,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_CENTISKORCH_GIGANTAMAX] =
+    [SPECIES_CENTISKORCH_GMAX] =
     {
         .baseHP        = 100,
         .baseAttack    = 115,
@@ -3688,25 +3680,25 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .weight = 0,
         .description = COMPOUND_STRING(
             "The heat that comes off a\n"
-            "Gigantamax Centiskorch may destabilize air\n"
-            "currents. Sometimes it can even\n"
-            "cause storms."),
+            "Gigantamax Centiskorch may\n"
+            "destabilize air currents. Sometimes\n"
+            "it can even cause storms."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CentiskorchGigantamax,
+        .frontPic = gMonFrontPic_CentiskorchGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_CentiskorchGigantamax,
+        .frontAnimFrames = sAnims_CentiskorchGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CentiskorchGigantamax,
+        .backPic = gMonBackPic_CentiskorchGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CentiskorchGigantamax,
-        .shinyPalette = gMonShinyPalette_CentiskorchGigantamax,
-        .iconSprite = gMonIcon_CentiskorchGigantamax,
+        .palette = gMonPalette_CentiskorchGmax,
+        .shinyPalette = gMonShinyPalette_CentiskorchGmax,
+        .iconSprite = gMonIcon_CentiskorchGmax,
         .iconPalIndex = 0,
         SHADOW(6, 9, SHADOW_SIZE_L)
         FOOTPRINT(Centiskorch)
@@ -4286,7 +4278,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_HATTERENE_GIGANTAMAX] =
+    [SPECIES_HATTERENE_GMAX] =
     {
         .baseHP        = 57,
         .baseAttack    = 90,
@@ -4320,18 +4312,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 0,
         .trainerScale = 365,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_HattereneGigantamax,
+        .frontPic = gMonFrontPic_HattereneGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_HattereneGigantamax,
+        .frontAnimFrames = sAnims_HattereneGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_HattereneGigantamax,
+        .backPic = gMonBackPic_HattereneGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_HattereneGigantamax,
-        .shinyPalette = gMonShinyPalette_HattereneGigantamax,
-        .iconSprite = gMonIcon_HattereneGigantamax,
+        .palette = gMonPalette_HattereneGmax,
+        .shinyPalette = gMonShinyPalette_HattereneGmax,
+        .iconSprite = gMonIcon_HattereneGmax,
         .iconPalIndex = 0,
         SHADOW(-3, 13, SHADOW_SIZE_S)
         FOOTPRINT(Hatterene)
@@ -4372,9 +4364,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .weight = 55,
         .description = COMPOUND_STRING(
             "Through its nose, it sucks in the\n"
-            "emanations produced by people and Pokémon\n"
-            "when they feel annoyed. It thrives off\n"
-            "this negative energy."),
+            "emanations produced by people and\n"
+            "Pokémon when they feel annoyed. It\n"
+            "thrives off this negative energy."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -4533,7 +4525,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_GRIMMSNARL_GIGANTAMAX] =
+    [SPECIES_GRIMMSNARL_GMAX] =
     {
         .baseHP        = 95,
         .baseAttack    = 120,
@@ -4567,18 +4559,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GrimmsnarlGigantamax,
+        .frontPic = gMonFrontPic_GrimmsnarlGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_GrimmsnarlGigantamax,
+        .frontAnimFrames = sAnims_GrimmsnarlGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GrimmsnarlGigantamax,
+        .backPic = gMonBackPic_GrimmsnarlGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 10,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_GrimmsnarlGigantamax,
-        .shinyPalette = gMonShinyPalette_GrimmsnarlGigantamax,
-        .iconSprite = gMonIcon_GrimmsnarlGigantamax,
+        .palette = gMonPalette_GrimmsnarlGmax,
+        .shinyPalette = gMonShinyPalette_GrimmsnarlGmax,
+        .iconSprite = gMonIcon_GrimmsnarlGmax,
         .iconPalIndex = 0,
         SHADOW(0, 14, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Grimmsnarl)
@@ -4789,7 +4781,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     [SPECIES_ALCREMIE_RIBBON_CARAMEL_SWIRL]     = ALCREMIE_REGULAR_SPECIES_INFO(Ribbon,     CaramelSwirl, BODY_COLOR_BROWN),
     [SPECIES_ALCREMIE_RIBBON_RAINBOW_SWIRL]     = ALCREMIE_REGULAR_SPECIES_INFO(Ribbon,     RainbowSwirl, BODY_COLOR_YELLOW),
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_ALCREMIE_GIGANTAMAX] =
+    [SPECIES_ALCREMIE_GMAX] =
     {
         ALCREMIE_MISC_INFO(BODY_COLOR_YELLOW),
         .speciesName = _("Alcremie"),
@@ -4807,18 +4799,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_AlcremieGigantamax,
+        .frontPic = gMonFrontPic_AlcremieGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_AlcremieGigantamax,
+        .frontAnimFrames = sAnims_AlcremieGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_AlcremieGigantamax,
+        .backPic = gMonBackPic_AlcremieGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 9,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_AlcremieGigantamax,
-        .shinyPalette = gMonShinyPalette_AlcremieGigantamax,
-        .iconSprite = gMonIcon_AlcremieGigantamax,
+        .palette = gMonPalette_AlcremieGmax,
+        .shinyPalette = gMonShinyPalette_AlcremieGmax,
+        .iconSprite = gMonIcon_AlcremieGmax,
         .iconPalIndex = 1,
         SHADOW(0, 10, SHADOW_SIZE_L)
         FOOTPRINT(Alcremie)
@@ -5149,7 +5141,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_FAMILY_STONJOURNER
 
 #if P_FAMILY_EISCUE
-    [SPECIES_EISCUE_ICE_FACE] =
+    [SPECIES_EISCUE_ICE] =
     {
         .baseHP        = 75,
         .baseAttack    = 80,
@@ -5169,7 +5161,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_ICE_FACE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Eiscue"),
-        .cryId = CRY_EISCUE_ICE_FACE,
+        .cryId = CRY_EISCUE_ICE,
         .natDexNum = NATIONAL_DEX_EISCUE,
         .categoryName = _("Penguin"),
         .height = 14,
@@ -5183,28 +5175,28 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_EiscueIceFace,
+        .frontPic = gMonFrontPic_EiscueIce,
         .frontPicSize = MON_COORDS_SIZE(40, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Eiscue,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_EiscueIceFace,
+        .backPic = gMonBackPic_EiscueIce,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_EiscueIceFace,
-        .shinyPalette = gMonShinyPalette_EiscueIceFace,
-        .iconSprite = gMonIcon_EiscueIceFace,
+        .palette = gMonPalette_EiscueIce,
+        .shinyPalette = gMonShinyPalette_EiscueIce,
+        .iconSprite = gMonIcon_EiscueIce,
         .iconPalIndex = 0,
         SHADOW(-1, 13, SHADOW_SIZE_S)
         FOOTPRINT(Eiscue)
         OVERWORLD(
-            sPicTable_EiscueIceFace,
+            sPicTable_EiscueIce,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_EiscueIceFace,
-            gShinyOverworldPalette_EiscueIceFace
+            gOverworldPalette_EiscueIce,
+            gShinyOverworldPalette_EiscueIce
         )
         .levelUpLearnset = sEiscueLevelUpLearnset,
         .teachableLearnset = sEiscueTeachableLearnset,
@@ -5213,7 +5205,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sEiscueFormChangeTable,
     },
 
-    [SPECIES_EISCUE_NOICE_FACE] =
+    [SPECIES_EISCUE_NOICE] =
     {
         .baseHP        = 75,
         .baseAttack    = 80,
@@ -5247,18 +5239,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_EiscueNoiceFace,
+        .frontPic = gMonFrontPic_EiscueNoice,
         .frontPicSize = MON_COORDS_SIZE(40, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Eiscue,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_EiscueNoiceFace,
+        .backPic = gMonBackPic_EiscueNoice,
         .backPicSize = MON_COORDS_SIZE(40, 64),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_EiscueNoiceFace,
-        .shinyPalette = gMonShinyPalette_EiscueNoiceFace,
-        .iconSprite = gMonIcon_EiscueNoiceFace,
+        .palette = gMonPalette_EiscueNoice,
+        .shinyPalette = gMonShinyPalette_EiscueNoice,
+        .iconSprite = gMonIcon_EiscueNoice,
         .iconPalIndex = 0,
         SHADOW(-1, 13, SHADOW_SIZE_S)
         FOOTPRINT(Eiscue)
@@ -5271,7 +5263,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_FAMILY_EISCUE
 
 #if P_FAMILY_INDEEDEE
-    [SPECIES_INDEEDEE_MALE] =
+    [SPECIES_INDEEDEE_M] =
     {
         .baseHP        = 60,
         .baseAttack    = 65,
@@ -5291,7 +5283,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_SYNCHRONIZE, ABILITY_PSYCHIC_SURGE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Indeedee"),
-        .cryId = CRY_INDEEDEE_MALE,
+        .cryId = CRY_INDEEDEE_M,
         .natDexNum = NATIONAL_DEX_INDEEDEE,
         .categoryName = _("Emotion"),
         .height = 9,
@@ -5305,35 +5297,35 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_IndeedeeMale,
+        .frontPic = gMonFrontPic_IndeedeeM,
         .frontPicSize = MON_COORDS_SIZE(40, 56),
         .frontPicYOffset = 9,
         .frontAnimFrames = sAnims_Indeedee,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_IndeedeeMale,
+        .backPic = gMonBackPic_IndeedeeM,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_IndeedeeMale,
-        .shinyPalette = gMonShinyPalette_IndeedeeMale,
-        .iconSprite = gMonIcon_IndeedeeMale,
+        .palette = gMonPalette_IndeedeeM,
+        .shinyPalette = gMonShinyPalette_IndeedeeM,
+        .iconSprite = gMonIcon_IndeedeeM,
         .iconPalIndex = 2,
         SHADOW(2, 4, SHADOW_SIZE_S)
         FOOTPRINT(Indeedee)
         OVERWORLD(
-            sPicTable_IndeedeeMale,
+            sPicTable_IndeedeeM,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_IndeedeeMale,
-            gShinyOverworldPalette_IndeedeeMale
+            gOverworldPalette_IndeedeeM,
+            gShinyOverworldPalette_IndeedeeM
         )
-        .levelUpLearnset = sIndeedeeMaleLevelUpLearnset,
-        .teachableLearnset = sIndeedeeMaleTeachableLearnset,
+        .levelUpLearnset = sIndeedeeMLevelUpLearnset,
+        .teachableLearnset = sIndeedeeMTeachableLearnset,
         .formSpeciesIdTable = sIndeedeeFormSpeciesIdTable,
     },
 
-    [SPECIES_INDEEDEE_FEMALE] =
+    [SPECIES_INDEEDEE_F] =
     {
         .baseHP        = 70,
         .baseAttack    = 55,
@@ -5353,7 +5345,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_SYNCHRONIZE, ABILITY_PSYCHIC_SURGE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Indeedee"),
-        .cryId = CRY_INDEEDEE_FEMALE,
+        .cryId = CRY_INDEEDEE_F,
         .natDexNum = NATIONAL_DEX_INDEEDEE,
         .categoryName = _("Emotion"),
         .height = 9,
@@ -5367,32 +5359,32 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_IndeedeeFemale,
+        .frontPic = gMonFrontPic_IndeedeeF,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 9,
         .frontAnimFrames = sAnims_Indeedee,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_IndeedeeFemale,
+        .backPic = gMonBackPic_IndeedeeF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_IndeedeeFemale,
-        .shinyPalette = gMonShinyPalette_IndeedeeFemale,
-        .iconSprite = gMonIcon_IndeedeeFemale,
+        .palette = gMonPalette_IndeedeeF,
+        .shinyPalette = gMonShinyPalette_IndeedeeF,
+        .iconSprite = gMonIcon_IndeedeeF,
         .iconPalIndex = 2,
         SHADOW(2, 4, SHADOW_SIZE_S)
         FOOTPRINT(Indeedee)
         OVERWORLD(
-            sPicTable_IndeedeeFemale,
+            sPicTable_IndeedeeF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_IndeedeeFemale,
-            gShinyOverworldPalette_IndeedeeFemale
+            gOverworldPalette_IndeedeeF,
+            gShinyOverworldPalette_IndeedeeF
         )
-        .levelUpLearnset = sIndeedeeFemaleLevelUpLearnset,
-        .teachableLearnset = sIndeedeeFemaleTeachableLearnset,
-        .eggMoveLearnset = sIndeedeeFemaleEggMoveLearnset,
+        .levelUpLearnset = sIndeedeeFLevelUpLearnset,
+        .teachableLearnset = sIndeedeeFTeachableLearnset,
+        .eggMoveLearnset = sIndeedeeFEggMoveLearnset,
         .formSpeciesIdTable = sIndeedeeFormSpeciesIdTable,
     },
 #endif //P_FAMILY_INDEEDEE
@@ -5648,7 +5640,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_COPPERAJAH_GIGANTAMAX] =
+    [SPECIES_COPPERAJAH_GMAX] =
     {
         .baseHP        = 122,
         .baseAttack    = 130,
@@ -5675,26 +5667,26 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 230,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "After this Pokémon has\n"
-            "Gigantamaxed, its massive nose can utterly\n"
-            "demolish large structures with a single\n"
+            "After this Pokémon has Gigantamaxed,\n"
+            "its massive nose can utterly demolish\n"
+            "large structures with a single\n"
             "smashing blow."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CopperajahGigantamax,
+        .frontPic = gMonFrontPic_CopperajahGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_CopperajahGigantamax,
+        .frontAnimFrames = sAnims_CopperajahGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CopperajahGigantamax,
+        .backPic = gMonBackPic_CopperajahGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CopperajahGigantamax,
-        .shinyPalette = gMonShinyPalette_CopperajahGigantamax,
-        .iconSprite = gMonIcon_CopperajahGigantamax,
+        .palette = gMonPalette_CopperajahGmax,
+        .shinyPalette = gMonShinyPalette_CopperajahGmax,
+        .iconSprite = gMonIcon_CopperajahGmax,
         .iconPalIndex = 0,
         SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(Copperajah)
@@ -6024,7 +6016,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_DURALUDON_GIGANTAMAX] =
+    [SPECIES_DURALUDON_GMAX] =
     {
         .baseHP        = 70,
         .baseAttack    = 95,
@@ -6058,18 +6050,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 2,
         .trainerScale = 286,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_DuraludonGigantamax,
+        .frontPic = gMonFrontPic_DuraludonGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_DuraludonGigantamax,
+        .frontAnimFrames = sAnims_DuraludonGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_DuraludonGigantamax,
+        .backPic = gMonBackPic_DuraludonGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_DuraludonGigantamax,
-        .shinyPalette = gMonShinyPalette_DuraludonGigantamax,
-        .iconSprite = gMonIcon_DuraludonGigantamax,
+        .palette = gMonPalette_DuraludonGmax,
+        .shinyPalette = gMonShinyPalette_DuraludonGmax,
+        .iconSprite = gMonIcon_DuraludonGmax,
         .iconPalIndex = 0,
         SHADOW(3, 12, SHADOW_SIZE_L)
         FOOTPRINT(Duraludon)
@@ -6337,7 +6329,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_FAMILY_DREEPY
 
 #if P_FAMILY_ZACIAN
-    [SPECIES_ZACIAN_HERO_OF_MANY_BATTLES] =
+    [SPECIES_ZACIAN_HERO] =
     {
         .baseHP        = 92,
         .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 120 : 130,
@@ -6357,41 +6349,41 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_INTREPID_SWORD, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Zacian"),
-        .cryId = CRY_ZACIAN_HERO_OF_MANY_BATTLES,
+        .cryId = CRY_ZACIAN_HERO,
         .natDexNum = NATIONAL_DEX_ZACIAN,
         .categoryName = _("Warrior"),
         .height = 28,
         .weight = 1100,
         .description = COMPOUND_STRING(
             "Known as a legendary hero, this Pokémon\n"
-            "absorbs metal particles, transforming them\n"
-            "into a weapon it uses to battle."),
+            "absorbs metal particles, transforming\n"
+            "them into a weapon it uses to battle."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ZacianHeroOfManyBattles,
+        .frontPic = gMonFrontPic_ZacianHero,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_Zacian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ZacianHeroOfManyBattles,
+        .backPic = gMonBackPic_ZacianHero,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ZacianHeroOfManyBattles,
-        .shinyPalette = gMonShinyPalette_ZacianHeroOfManyBattles,
-        .iconSprite = gMonIcon_ZacianHeroOfManyBattles,
+        .palette = gMonPalette_ZacianHero,
+        .shinyPalette = gMonShinyPalette_ZacianHero,
+        .iconSprite = gMonIcon_ZacianHero,
         .iconPalIndex = 2,
         SHADOW(-1, 9, SHADOW_SIZE_L)
         FOOTPRINT(Zacian)
         OVERWORLD(
-            sPicTable_ZacianHeroOfManyBattles,
+            sPicTable_ZacianHero,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_ZacianHeroOfManyBattles,
-            gShinyOverworldPalette_ZacianHeroOfManyBattles
+            gOverworldPalette_ZacianHero,
+            gShinyOverworldPalette_ZacianHero
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
@@ -6402,7 +6394,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sZacianFormChangeTable,
     },
 
-    [SPECIES_ZACIAN_CROWNED_SWORD] =
+    [SPECIES_ZACIAN_CROWNED] =
     {
         .baseHP        = 92,
         .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 150 : 170,
@@ -6422,7 +6414,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_INTREPID_SWORD, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Zacian"),
-        .cryId = CRY_ZACIAN_CROWNED_SWORD,
+        .cryId = CRY_ZACIAN_CROWNED,
         .natDexNum = NATIONAL_DEX_ZACIAN,
         .categoryName = _("Warrior"),
         .height = 28,
@@ -6436,28 +6428,28 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ZacianCrownedSword,
+        .frontPic = gMonFrontPic_ZacianCrowned,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Zacian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ZacianCrownedSword,
+        .backPic = gMonBackPic_ZacianCrowned,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ZacianCrownedSword,
-        .shinyPalette = gMonShinyPalette_ZacianCrownedSword,
-        .iconSprite = gMonIcon_ZacianCrownedSword,
+        .palette = gMonPalette_ZacianCrowned,
+        .shinyPalette = gMonShinyPalette_ZacianCrowned,
+        .iconSprite = gMonIcon_ZacianCrowned,
         .iconPalIndex = 2,
         SHADOW(-3, 12, SHADOW_SIZE_L)
         FOOTPRINT(Zacian)
         OVERWORLD(
-            sPicTable_ZacianCrownedSword,
+            sPicTable_ZacianCrowned,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_ZacianCrownedSword,
-            gShinyOverworldPalette_ZacianCrownedSword
+            gOverworldPalette_ZacianCrowned,
+            gShinyOverworldPalette_ZacianCrowned
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
@@ -6470,7 +6462,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #endif //P_FAMILY_ZACIAN
 
 #if P_FAMILY_ZAMAZENTA
-    [SPECIES_ZAMAZENTA_HERO_OF_MANY_BATTLES] =
+    [SPECIES_ZAMAZENTA_HERO] =
     {
         .baseHP        = 92,
         .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 120 : 130,
@@ -6490,7 +6482,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_DAUNTLESS_SHIELD, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Zamazenta"),
-        .cryId = CRY_ZAMAZENTA_HERO_OF_MANY_BATTLES,
+        .cryId = CRY_ZAMAZENTA_HERO,
         .natDexNum = NATIONAL_DEX_ZAMAZENTA,
         .categoryName = _("Warrior"),
         .height = 29,
@@ -6504,28 +6496,28 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ZamazentaHeroOfManyBattles,
+        .frontPic = gMonFrontPic_ZamazentaHero,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Zamazenta,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ZamazentaHeroOfManyBattles,
+        .backPic = gMonBackPic_ZamazentaHero,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ZamazentaHeroOfManyBattles,
-        .shinyPalette = gMonShinyPalette_ZamazentaHeroOfManyBattles,
-        .iconSprite = gMonIcon_ZamazentaHeroOfManyBattles,
+        .palette = gMonPalette_ZamazentaHero,
+        .shinyPalette = gMonShinyPalette_ZamazentaHero,
+        .iconSprite = gMonIcon_ZamazentaHero,
         .iconPalIndex = 2,
         SHADOW(-1, 12, SHADOW_SIZE_L)
         FOOTPRINT(Zamazenta)
         OVERWORLD(
-            sPicTable_ZamazentaHeroOfManyBattles,
+            sPicTable_ZamazentaHero,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_ZamazentaHeroOfManyBattles,
-            gShinyOverworldPalette_ZamazentaHeroOfManyBattles
+            gOverworldPalette_ZamazentaHero,
+            gShinyOverworldPalette_ZamazentaHero
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
@@ -6536,7 +6528,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sZamazentaFormChangeTable,
     },
 
-    [SPECIES_ZAMAZENTA_CROWNED_SHIELD] =
+    [SPECIES_ZAMAZENTA_CROWNED] =
     {
         .baseHP        = 92,
         .baseAttack    = P_UPDATED_STATS >= GEN_9 ? 120 : 130,
@@ -6556,7 +6548,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_DAUNTLESS_SHIELD, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Zamazenta"),
-        .cryId = CRY_ZAMAZENTA_CROWNED_SHIELD,
+        .cryId = CRY_ZAMAZENTA_CROWNED,
         .natDexNum = NATIONAL_DEX_ZAMAZENTA,
         .categoryName = _("Warrior"),
         .height = 29,
@@ -6570,28 +6562,28 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ZamazentaCrownedShield,
+        .frontPic = gMonFrontPic_ZamazentaCrowned,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Zamazenta,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ZamazentaCrownedShield,
+        .backPic = gMonBackPic_ZamazentaCrowned,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ZamazentaCrownedShield,
-        .shinyPalette = gMonShinyPalette_ZamazentaCrownedShield,
-        .iconSprite = gMonIcon_ZamazentaCrownedShield,
+        .palette = gMonPalette_ZamazentaCrowned,
+        .shinyPalette = gMonShinyPalette_ZamazentaCrowned,
+        .iconSprite = gMonIcon_ZamazentaCrowned,
         .iconPalIndex = 2,
         SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(Zamazenta)
         OVERWORLD(
-            sPicTable_ZamazentaCrownedShield,
+            sPicTable_ZamazentaCrowned,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_ZamazentaCrownedShield,
-            gShinyOverworldPalette_ZamazentaCrownedShield
+            gOverworldPalette_ZamazentaCrowned,
+            gShinyOverworldPalette_ZamazentaCrowned
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,
@@ -6790,13 +6782,13 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sKubfuLevelUpLearnset,
         .teachableLearnset = sKubfuTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_DARK_SCROLL, 0, SPECIES_URSHIFU_SINGLE_STRIKE_STYLE},
-                                {EVO_ITEM, ITEM_SCROLL_OF_DARKNESS, SPECIES_URSHIFU_SINGLE_STRIKE_STYLE},
-                                {EVO_WATER_SCROLL, 0, SPECIES_URSHIFU_RAPID_STRIKE_STYLE},
-                                {EVO_ITEM, ITEM_SCROLL_OF_WATERS, SPECIES_URSHIFU_RAPID_STRIKE_STYLE}),
+        .evolutions = EVOLUTION({EVO_DARK_SCROLL, 0, SPECIES_URSHIFU_SINGLE_STRIKE},
+                                {EVO_ITEM, ITEM_SCROLL_OF_DARKNESS, SPECIES_URSHIFU_SINGLE_STRIKE},
+                                {EVO_WATER_SCROLL, 0, SPECIES_URSHIFU_RAPID_STRIKE},
+                                {EVO_ITEM, ITEM_SCROLL_OF_WATERS, SPECIES_URSHIFU_RAPID_STRIKE}),
     },
 
-    [SPECIES_URSHIFU_SINGLE_STRIKE_STYLE] =
+    [SPECIES_URSHIFU_SINGLE_STRIKE] =
     {
         .baseHP        = 100,
         .baseAttack    = 130,
@@ -6816,7 +6808,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_UNSEEN_FIST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Urshifu"),
-        .cryId = CRY_URSHIFU_SINGLE_STRIKE_STYLE,
+        .cryId = CRY_URSHIFU_SINGLE_STRIKE,
         .natDexNum = NATIONAL_DEX_URSHIFU,
         .categoryName = _("Wushu"),
         .height = 19,
@@ -6830,17 +6822,17 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 1,
         .trainerScale = 326,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_UrshifuSingleStrikeStyle,
+        .frontPic = gMonFrontPic_UrshifuSingleStrike,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Urshifu,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_UrshifuSingleStrikeStyle,
+        .backPic = gMonBackPic_UrshifuSingleStrike,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_UrshifuSingleStrikeStyle,
-        .shinyPalette = gMonShinyPalette_UrshifuSingleStrikeStyle,
+        .palette = gMonPalette_UrshifuSingleStrike,
+        .shinyPalette = gMonShinyPalette_UrshifuSingleStrike,
         .iconSprite = gMonIcon_Urshifu,
         .iconPalIndex = 2,
         SHADOW(0, 14, SHADOW_SIZE_L)
@@ -6855,14 +6847,14 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .isLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sUrshifuSingleStrikeStyleLevelUpLearnset,
-        .teachableLearnset = sUrshifuSingleStrikeStyleTeachableLearnset,
+        .levelUpLearnset = sUrshifuSingleStrikeLevelUpLearnset,
+        .teachableLearnset = sUrshifuSingleStrikeTeachableLearnset,
         .formSpeciesIdTable = sUrshifuFormSpeciesIdTable,
         .formChangeTable = sUrshifuSingleStrikeFormChangeTable,
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_URSHIFU_SINGLE_STRIKE_STYLE_GIGANTAMAX] =
+    [SPECIES_URSHIFU_SINGLE_STRIKE_GMAX] =
     {
         .baseHP        = 100,
         .baseAttack    = 130,
@@ -6882,7 +6874,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_UNSEEN_FIST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Urshifu"),
-        .cryId = CRY_URSHIFU_SINGLE_STRIKE_STYLE,
+        .cryId = CRY_URSHIFU_SINGLE_STRIKE,
         .natDexNum = NATIONAL_DEX_URSHIFU,
         .categoryName = _("Wushu"),
         .height = 290,
@@ -6896,31 +6888,31 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 1,
         .trainerScale = 326,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_UrshifuSingleStrikeStyleGigantamax,
+        .frontPic = gMonFrontPic_UrshifuSingleStrikeGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_UrshifuSingleStrikeStyleGigantamax,
+        .frontAnimFrames = sAnims_UrshifuSingleStrikeGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_UrshifuSingleStrikeStyleGigantamax,
+        .backPic = gMonBackPic_UrshifuSingleStrikeGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_UrshifuSingleStrikeStyleGigantamax,
-        .shinyPalette = gMonShinyPalette_UrshifuSingleStrikeStyleGigantamax,
-        .iconSprite = gMonIcon_UrshifuSingleStrikeStyleGigantamax,
+        .palette = gMonPalette_UrshifuSingleStrikeGmax,
+        .shinyPalette = gMonShinyPalette_UrshifuSingleStrikeGmax,
+        .iconSprite = gMonIcon_UrshifuSingleStrikeGmax,
         .iconPalIndex = 0,
         SHADOW(1, 13, SHADOW_SIZE_L)
         FOOTPRINT(Urshifu)
         .isLegendary = TRUE,
         .isGigantamax = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sUrshifuSingleStrikeStyleLevelUpLearnset,
-        .teachableLearnset = sUrshifuSingleStrikeStyleTeachableLearnset,
+        .levelUpLearnset = sUrshifuSingleStrikeLevelUpLearnset,
+        .teachableLearnset = sUrshifuSingleStrikeTeachableLearnset,
         .formSpeciesIdTable = sUrshifuFormSpeciesIdTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 
-    [SPECIES_URSHIFU_RAPID_STRIKE_STYLE] =
+    [SPECIES_URSHIFU_RAPID_STRIKE] =
     {
         .baseHP        = 100,
         .baseAttack    = 130,
@@ -6940,7 +6932,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_UNSEEN_FIST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Urshifu"),
-        .cryId = CRY_URSHIFU_RAPID_STRIKE_STYLE,
+        .cryId = CRY_URSHIFU_RAPID_STRIKE,
         .natDexNum = NATIONAL_DEX_URSHIFU,
         .categoryName = _("Wushu"),
         .height = 19,
@@ -6954,17 +6946,17 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 1,
         .trainerScale = 326,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_UrshifuRapidStrikeStyle,
+        .frontPic = gMonFrontPic_UrshifuRapidStrike,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Urshifu,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_UrshifuRapidStrikeStyle,
+        .backPic = gMonBackPic_UrshifuRapidStrike,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_UrshifuRapidStrikeStyle,
-        .shinyPalette = gMonShinyPalette_UrshifuRapidStrikeStyle,
+        .palette = gMonPalette_UrshifuRapidStrike,
+        .shinyPalette = gMonShinyPalette_UrshifuRapidStrike,
         .iconSprite = gMonIcon_Urshifu,
         .iconPalIndex = 2,
         SHADOW(4, 14, SHADOW_SIZE_M)
@@ -6979,14 +6971,14 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .isLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sUrshifuRapidStrikeStyleLevelUpLearnset,
-        .teachableLearnset = sUrshifuRapidStrikeStyleTeachableLearnset,
+        .levelUpLearnset = sUrshifuRapidStrikeLevelUpLearnset,
+        .teachableLearnset = sUrshifuRapidStrikeTeachableLearnset,
         .formSpeciesIdTable = sUrshifuFormSpeciesIdTable,
         .formChangeTable = sUrshifuRapidStrikeFormChangeTable,
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX] =
+    [SPECIES_URSHIFU_RAPID_STRIKE_GMAX] =
     {
         .baseHP        = 100,
         .baseAttack    = 130,
@@ -7006,7 +6998,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_UNSEEN_FIST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Urshifu"),
-        .cryId = CRY_URSHIFU_RAPID_STRIKE_STYLE,
+        .cryId = CRY_URSHIFU_RAPID_STRIKE,
         .natDexNum = NATIONAL_DEX_URSHIFU,
         .categoryName = _("Wushu"),
         .height = 260,
@@ -7020,26 +7012,26 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 1,
         .trainerScale = 326,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_UrshifuRapidStrikeStyleGigantamax,
+        .frontPic = gMonFrontPic_UrshifuRapidStrikeGmax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_UrshifuRapidStrikeStyleGigantamax,
+        .frontAnimFrames = sAnims_UrshifuRapidStrikeGmax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_UrshifuRapidStrikeStyleGigantamax,
+        .backPic = gMonBackPic_UrshifuRapidStrikeGmax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_UrshifuRapidStrikeStyleGigantamax,
-        .shinyPalette = gMonShinyPalette_UrshifuRapidStrikeStyleGigantamax,
-        .iconSprite = gMonIcon_UrshifuRapidStrikeStyleGigantamax,
+        .palette = gMonPalette_UrshifuRapidStrikeGmax,
+        .shinyPalette = gMonShinyPalette_UrshifuRapidStrikeGmax,
+        .iconSprite = gMonIcon_UrshifuRapidStrikeGmax,
         .iconPalIndex = 0,
         SHADOW(2, 13, SHADOW_SIZE_M)
         FOOTPRINT(Urshifu)
         .isLegendary = TRUE,
         .isGigantamax = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sUrshifuRapidStrikeStyleLevelUpLearnset,
-        .teachableLearnset = sUrshifuRapidStrikeStyleTeachableLearnset,
+        .levelUpLearnset = sUrshifuRapidStrikeLevelUpLearnset,
+        .teachableLearnset = sUrshifuRapidStrikeTeachableLearnset,
         .formSpeciesIdTable = sUrshifuFormSpeciesIdTable,
     },
 #endif //P_GIGANTAMAX_FORMS
@@ -7497,7 +7489,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
     },
 
 #if P_FUSION_FORMS
-    [SPECIES_CALYREX_ICE_RIDER] =
+    [SPECIES_CALYREX_ICE] =
     {
         .baseHP        = 100,
         .baseAttack    = 165,
@@ -7517,7 +7509,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_AS_ONE_ICE_RIDER, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Calyrex"),
-        .cryId = CRY_CALYREX_ICE_RIDER,
+        .cryId = CRY_CALYREX_ICE,
         .natDexNum = NATIONAL_DEX_CALYREX,
         .categoryName = _("High King"),
         .height = 24,
@@ -7531,39 +7523,39 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CalyrexIceRider,
+        .frontPic = gMonFrontPic_CalyrexIce,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Calyrex,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CalyrexIceRider,
+        .backPic = gMonBackPic_CalyrexIce,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CalyrexIceRider,
-        .shinyPalette = gMonShinyPalette_CalyrexIceRider,
-        .iconSprite = gMonIcon_CalyrexIceRider,
+        .palette = gMonPalette_CalyrexIce,
+        .shinyPalette = gMonShinyPalette_CalyrexIce,
+        .iconSprite = gMonIcon_CalyrexIce,
         .iconPalIndex = 0,
         SHADOW(-5, 11, SHADOW_SIZE_L)
         FOOTPRINT(Calyrex)
         OVERWORLD(
-            sPicTable_CalyrexIceRider,
+            sPicTable_CalyrexIce,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_CalyrexIceRider,
-            gShinyOverworldPalette_CalyrexIceRider
+            gOverworldPalette_CalyrexIce,
+            gShinyOverworldPalette_CalyrexIce
         )
         .isLegendary = TRUE,
         .cannotBeTraded = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sCalyrexIceRiderLevelUpLearnset,
-        .teachableLearnset = sCalyrexIceRiderTeachableLearnset,
+        .levelUpLearnset = sCalyrexIceLevelUpLearnset,
+        .teachableLearnset = sCalyrexIceTeachableLearnset,
         .formSpeciesIdTable = sCalyrexFormSpeciesIdTable,
     },
 
-    [SPECIES_CALYREX_SHADOW_RIDER] =
+    [SPECIES_CALYREX_SHADOW] =
     {
         .baseHP        = 100,
         .baseAttack    = 85,
@@ -7583,7 +7575,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .abilities = { ABILITY_AS_ONE_SHADOW_RIDER, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Calyrex"),
-        .cryId = CRY_CALYREX_SHADOW_RIDER,
+        .cryId = CRY_CALYREX_SHADOW,
         .natDexNum = NATIONAL_DEX_CALYREX,
         .categoryName = _("High King"),
         .height = 24,
@@ -7597,35 +7589,35 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CalyrexShadowRider,
+        .frontPic = gMonFrontPic_CalyrexShadow,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Calyrex,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CalyrexShadowRider,
+        .backPic = gMonBackPic_CalyrexShadow,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CalyrexShadowRider,
-        .shinyPalette = gMonShinyPalette_CalyrexShadowRider,
-        .iconSprite = gMonIcon_CalyrexShadowRider,
+        .palette = gMonPalette_CalyrexShadow,
+        .shinyPalette = gMonShinyPalette_CalyrexShadow,
+        .iconSprite = gMonIcon_CalyrexShadow,
         .iconPalIndex = 0,
         SHADOW(-5, 12, SHADOW_SIZE_L)
         FOOTPRINT(Calyrex)
         OVERWORLD(
-            sPicTable_CalyrexShadowRider,
+            sPicTable_CalyrexShadow,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_CalyrexShadowRider,
-            gShinyOverworldPalette_CalyrexShadowRider
+            gOverworldPalette_CalyrexShadow,
+            gShinyOverworldPalette_CalyrexShadow
         )
         .isLegendary = TRUE,
         .cannotBeTraded = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sCalyrexShadowRiderLevelUpLearnset,
-        .teachableLearnset = sCalyrexShadowRiderTeachableLearnset,
+        .levelUpLearnset = sCalyrexShadowLevelUpLearnset,
+        .teachableLearnset = sCalyrexShadowTeachableLearnset,
         .formSpeciesIdTable = sCalyrexFormSpeciesIdTable,
     },
 #endif //P_FUSION_FORMS
