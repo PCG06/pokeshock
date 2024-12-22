@@ -489,14 +489,6 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ABANDONED_SHIP",
-      "name": "ABANDONED SHIP",
-      "x": 6,
-      "y": 14,
-      "width": 1,
-      "height": 1
-    },
-    {
       "map_section": "MAPSEC_NEW_MAUVILLE",
       "name": "NEW MAUVILLE",
       "x": 8,
