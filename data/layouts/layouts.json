@@ -82,16 +82,6 @@
       "blockdata_filepath": "data/layouts/MossdeepCity/map.bin"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY",
-      "name": "SootopolisCity_Layout",
-      "width": 60,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Sootopolis",
-      "border_filepath": "data/layouts/SootopolisCity/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity/map.bin"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY",
       "name": "EverGrandeCity_Layout",
       "width": 40,
@@ -1090,26 +1080,6 @@
       "secondary_tileset": "gTileset_MossdeepGym",
       "border_filepath": "data/layouts/MossdeepCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/MossdeepCity_Gym/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_GYM_1F",
-      "name": "SootopolisCity_Gym_1F_Layout",
-      "width": 17,
-      "height": 26,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
-      "border_filepath": "data/layouts/SootopolisCity_Gym_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_Gym_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_GYM_B1F",
-      "name": "SootopolisCity_Gym_B1F_Layout",
-      "width": 17,
-      "height": 26,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
-      "border_filepath": "data/layouts/SootopolisCity_Gym_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_Gym_B1F/map.bin"
     },
     {
       "id": "LAYOUT_EVER_GRANDE_CITY_SIDNEYS_ROOM",
@@ -2852,16 +2822,6 @@
       "blockdata_filepath": "data/layouts/RustboroCity_Flat2_3F/map.bin"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
-      "name": "SootopolisCity_LotadAndSeedotHouse_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/map.bin"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY_HALL_OF_FAME",
       "name": "EverGrandeCity_HallOfFame_Layout",
       "width": 15,
@@ -2950,36 +2910,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/MossdeepCity_GameCorner_B1F/border.bin",
       "blockdata_filepath": "data/layouts/MossdeepCity_GameCorner_B1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE1",
-      "name": "SootopolisCity_House1_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House1/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House1/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE2",
-      "name": "SootopolisCity_House2_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House2/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House2/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE3",
-      "name": "SootopolisCity_House3_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House3/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House3/map.bin"
     },
     {
       "id": "LAYOUT_SCORCHED_SLAB",
@@ -3440,16 +3370,6 @@
       "secondary_tileset": "gTileset_BattleArena",
       "border_filepath": "data/layouts/BattleFrontier_BattleArenaBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleArenaBattleRoom/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_LEGENDS_BATTLE",
-      "name": "SootopolisCity_LegendsBattle_Layout",
-      "width": 60,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Sootopolis",
-      "border_filepath": "data/layouts/SootopolisCity_LegendsBattle/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_LegendsBattle/map.bin"
     },
     {
       "id": "LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS",
@@ -4260,36 +4180,6 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/SkyPillar_Top_Clean/border.bin",
       "blockdata_filepath": "data/layouts/SkyPillar_Top_Clean/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F",
-      "name": "SootopolisCity_MysteryEventsHouse_1F_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F",
-      "name": "SootopolisCity_MysteryEventsHouse_B1F_Layout",
-      "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F_STAIRS_UNBLOCKED",
-      "name": "SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
     }
   ]
 }
