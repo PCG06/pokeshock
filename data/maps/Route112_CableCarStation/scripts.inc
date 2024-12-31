@@ -47,7 +47,6 @@ Route112_CableCarStation_EventScript_RideCableCar::
 	setvar VAR_0x8004, FALSE  @ Going up
 	setvar VAR_CABLE_CAR_STATION_STATE, 1
 	incrementgamestat GAME_STAT_RODE_CABLE_CAR
-	special CableCarWarp
 	special CableCar
 	waitstate
 	release

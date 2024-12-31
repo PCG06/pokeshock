@@ -48,7 +48,6 @@ Route111_EventScript_ShowTemporaryMirageTower::
 Route111_OnTransition:
 	setvar VAR_TRAINER_HILL_IS_ACTIVE, 0
 	special SetMirageTowerVisibility
-	call_if_unset FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_SetLayoutNoMirageTower
 	call_if_eq VAR_MIRAGE_TOWER_STATE, 1, Route111_EventScript_SetFallingPlayerGfx
 	call_if_eq VAR_MIRAGE_TOWER_STATE, 2, Route111_EventScript_SetMirageTowerGone
 	call Route111_EventScript_CheckSetSandstorm
@@ -91,10 +90,6 @@ Route111_EventScript_SetWinstratesNotDefeated::
 	cleartrainerflag TRAINER_VICTORIA
 	cleartrainerflag TRAINER_VIVI
 	end
-
-Route111_EventScript_SetLayoutNoMirageTower::
-	setmaplayoutindex LAYOUT_ROUTE111_NO_MIRAGE_TOWER
-	return
 
 Route111_EventScript_SetMirageTowerGone::
 	setvar VAR_MIRAGE_TOWER_STATE, 3

@@ -134,7 +134,6 @@ static void Task_ScrollableMultichoice_WaitReturnToList(u8);
 static void Task_ScrollableMultichoice_ReturnToList(u8);
 static void ShowFrontierExchangeCornerItemIcon(u16);
 static void Task_DeoxysRockInteraction(u8);
-static void WaitForDeoxysRockMovement(u8);
 static void Task_LinkRetireStatusWithBattleTowerPartner(u8);
 static void Task_LoopWingFlapSE(u8);
 static void Task_CloseBattlePikeCurtain(u8);
@@ -940,14 +939,6 @@ void GetRivalSonDaughterString(void)
 u8 GetBattleOutcome(void)
 {
     return gBattleOutcome;
-}
-
-void CableCarWarp(void)
-{
-    if (gSpecialVar_0x8004 != 0)
-        SetWarpDestination(MAP_GROUP(ROUTE112_CABLE_CAR_STATION), MAP_NUM(ROUTE112_CABLE_CAR_STATION), WARP_ID_NONE, 6, 4);
-    else
-        SetWarpDestination(MAP_GROUP(MT_CHIMNEY_CABLE_CAR_STATION), MAP_NUM(MT_CHIMNEY_CABLE_CAR_STATION), WARP_ID_NONE, 6, 4);
 }
 
 void SetHiddenItemFlag(void)
@@ -3226,15 +3217,6 @@ static void Task_DeoxysRockInteraction(u8 taskId)
     }
 }
 
-static void WaitForDeoxysRockMovement(u8 taskId)
-{
-    if (FieldEffectActiveListContains(FLDEFF_MOVE_DEOXYS_ROCK) == FALSE)
-    {
-        ScriptContext_Enable();
-        DestroyTask(taskId);
-    }
-}
-
 // called before fade-in
 void SetDeoxysRockPalette(void)
 {
@@ -3387,8 +3369,6 @@ bool8 AbnormalWeatherHasExpired(void)
             switch (gSaveBlock1Ptr->location.mapNum)
             {
             case MAP_NUM(UNDERWATER_MARINE_CAVE):
-            case MAP_NUM(MARINE_CAVE_ENTRANCE):
-            case MAP_NUM(MARINE_CAVE_END):
                 VarSet(VAR_SHOULD_END_ABNORMAL_WEATHER, 1);
                 return FALSE;
             default:

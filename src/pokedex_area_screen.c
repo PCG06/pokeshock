@@ -25,14 +25,13 @@
 // - Area glows, which highlight any of the maps in MAP_GROUP_TOWNS_AND_ROUTES that have the species.
 //   These are a tilemap with colored rectangular areas that blends in and out. The positions of the
 //   rectangles is determined by the positions of the matching MAPSEC values on the region map layout.
-// - Area markers, which highlight any of the maps in MAP_GROUP_DUNGEONS or MAP_GROUP_SPECIAL_AREA that
+// - Area markers, which highlight any of the maps in MAP_GROUP_SPECIAL_AREA that
 //   have the species. These are circular sprites that flash twice. The positions of the sprites is
 //   determined by the data for the corresponding MAPSEC in gRegionMapEntries.
 
 // Only maps in the following map groups have their encounters considered for the area screen
 #define MAP_GROUP_TOWNS_AND_ROUTES MAP_GROUP(PETALBURG_CITY)
-#define MAP_GROUP_DUNGEONS MAP_GROUP(METEOR_FALLS_1F_1R)
-#define MAP_GROUP_SPECIAL_AREA MAP_GROUP(SAFARI_ZONE_NORTHWEST)
+#define MAP_GROUP_SPECIAL_AREA 5//MAP_GROUP(DEMO_TOWN)
 
 #define AREA_SCREEN_WIDTH 32
 #define AREA_SCREEN_HEIGHT 20
@@ -276,7 +275,6 @@ static void FindMapsWithMon(u16 species)
             case MAP_GROUP_TOWNS_AND_ROUTES:
                 SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                 break;
-            case MAP_GROUP_DUNGEONS:
             case MAP_GROUP_SPECIAL_AREA:
                 SetSpecialMapHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                 break;
@@ -294,7 +292,6 @@ static void FindMapsWithMon(u16 species)
             case MAP_GROUP_TOWNS_AND_ROUTES:
                 SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                 break;
-            case MAP_GROUP_DUNGEONS:
             case MAP_GROUP_SPECIAL_AREA:
                 SetSpecialMapHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                 break;
