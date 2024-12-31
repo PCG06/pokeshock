@@ -1282,16 +1282,6 @@
       "blockdata_filepath": "data/layouts/Underwater_SootopolisCity/map.bin"
     },
     {
-      "id": "LAYOUT_DESERT_RUINS",
-      "name": "DesertRuins_Layout",
-      "width": 17,
-      "height": 33,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/DesertRuins/border.bin",
-      "blockdata_filepath": "data/layouts/DesertRuins/map.bin"
-    },
-    {
       "id": "LAYOUT_GRANITE_CAVE_1F",
       "name": "GraniteCave_1F_Layout",
       "width": 42,
@@ -1542,66 +1532,6 @@
       "blockdata_filepath": "data/layouts/SeafloorCavern_Room9/map.bin"
     },
     {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_ENTRANCE",
-      "name": "CaveOfOrigin_Entrance_Layout",
-      "width": 19,
-      "height": 26,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_Entrance/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_Entrance/map.bin"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_1F",
-      "name": "CaveOfOrigin_1F_Layout",
-      "width": 23,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_1F/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1",
-      "name": "CaveOfOrigin_UnusedRubySapphireMap1_Layout",
-      "width": 23,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap1/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap1/map.bin"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2",
-      "name": "CaveOfOrigin_UnusedRubySapphireMap2_Layout",
-      "width": 21,
-      "height": 21,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap2/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap2/map.bin"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3",
-      "name": "CaveOfOrigin_UnusedRubySapphireMap3_Layout",
-      "width": 19,
-      "height": 21,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap3/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap3/map.bin"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_B1F",
-      "name": "CaveOfOrigin_B1F_Layout",
-      "width": 19,
-      "height": 19,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_B1F/map.bin"
-    },
-    {
       "id": "LAYOUT_VICTORY_ROAD_1F",
       "name": "VictoryRoad_1F_Layout",
       "width": 46,
@@ -1610,66 +1540,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/VictoryRoad_1F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM",
-      "name": "ShoalCave_LowTideEntranceRoom_Layout",
-      "width": 35,
-      "height": 35,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideEntranceRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideEntranceRoom/map.bin"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_INNER_ROOM",
-      "name": "ShoalCave_LowTideInnerRoom_Layout",
-      "width": 46,
-      "height": 38,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideInnerRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideInnerRoom/map.bin"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM",
-      "name": "ShoalCave_LowTideStairsRoom_Layout",
-      "width": 21,
-      "height": 15,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideStairsRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideStairsRoom/map.bin"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
-      "name": "ShoalCave_LowTideLowerRoom_Layout",
-      "width": 31,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideLowerRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideLowerRoom/map.bin"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM",
-      "name": "ShoalCave_HighTideEntranceRoom_Layout",
-      "width": 35,
-      "height": 35,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_HighTideEntranceRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_HighTideEntranceRoom/map.bin"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM",
-      "name": "ShoalCave_HighTideInnerRoom_Layout",
-      "width": 46,
-      "height": 38,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_HighTideInnerRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_HighTideInnerRoom/map.bin"
     },
     {
       "id": "LAYOUT_UNUSED_CAVE1",
@@ -2662,16 +2532,6 @@
       "blockdata_filepath": "data/layouts/SSTidalRooms/map.bin"
     },
     {
-      "id": "LAYOUT_ISLAND_CAVE",
-      "name": "IslandCave_Layout",
-      "width": 17,
-      "height": 33,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/IslandCave/border.bin",
-      "blockdata_filepath": "data/layouts/IslandCave/map.bin"
-    },
-    {
       "id": "LAYOUT_ANCIENT_TOMB",
       "name": "AncientTomb_Layout",
       "width": 17,
@@ -2770,26 +2630,6 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/SouthernIsland_Interior/border.bin",
       "blockdata_filepath": "data/layouts/SouthernIsland_Interior/map.bin"
-    },
-    {
-      "id": "LAYOUT_JAGGED_PASS",
-      "name": "JaggedPass_Layout",
-      "width": 30,
-      "height": 46,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/JaggedPass/border.bin",
-      "blockdata_filepath": "data/layouts/JaggedPass/map.bin"
-    },
-    {
-      "id": "LAYOUT_FIERY_PATH",
-      "name": "FieryPath_Layout",
-      "width": 35,
-      "height": 38,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/FieryPath/border.bin",
-      "blockdata_filepath": "data/layouts/FieryPath/map.bin"
     },
     {
       "id": "LAYOUT_RUSTBORO_CITY_FLAT2_1F",
@@ -2922,16 +2762,6 @@
       "blockdata_filepath": "data/layouts/ScorchedSlab/map.bin"
     },
     {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_B4F_LAVA",
-      "name": "CaveOfOrigin_Unused_B4F_Lava_Layout",
-      "width": 19,
-      "height": 19,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_Unused_B4F_Lava/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_Unused_B4F_Lava/map.bin"
-    },
-    {
       "id": "LAYOUT_RUSTBORO_CITY_FLAT1_1F",
       "name": "RustboroCity_Flat1_1F_Layout",
       "width": 14,
@@ -2992,76 +2822,6 @@
       "blockdata_filepath": "data/layouts/AquaHideout_UnusedRubyMap3/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE131_SKY_PILLAR",
-      "name": "Route131_SkyPillar_Layout",
-      "width": 60,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/Route131_SkyPillar/border.bin",
-      "blockdata_filepath": "data/layouts/Route131_SkyPillar/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_ENTRANCE",
-      "name": "SkyPillar_Entrance_Layout",
-      "width": 18,
-      "height": 18,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/SkyPillar_Entrance/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_Entrance/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_OUTSIDE",
-      "name": "SkyPillar_Outside_Layout",
-      "width": 28,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_Outside/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_Outside/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_1F",
-      "name": "SkyPillar_1F_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_1F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_2F",
-      "name": "SkyPillar_2F_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_2F/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_2F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_3F",
-      "name": "SkyPillar_3F_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_3F/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_3F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_4F",
-      "name": "SkyPillar_4F_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_4F/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_4F/map.bin"
-    },
-    {
       "id": "LAYOUT_SEAFLOOR_CAVERN_ROOM9_LAVA",
       "name": "SeafloorCavern_Room9_Lava_Layout",
       "width": 27,
@@ -3082,16 +2842,6 @@
       "blockdata_filepath": "data/layouts/MossdeepCity_StevensHouse/map.bin"
     },
     {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
-      "name": "ShoalCave_LowTideIceRoom_Layout",
-      "width": 20,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideIceRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideIceRoom/map.bin"
-    },
-    {
       "id": "LAYOUT_SAFARI_ZONE_REST_HOUSE",
       "name": "SafariZone_RestHouse_Layout",
       "width": 10,
@@ -3100,26 +2850,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/SafariZone_RestHouse/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_RestHouse/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_5F",
-      "name": "SkyPillar_5F_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_5F/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_5F/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_TOP",
-      "name": "SkyPillar_Top_Layout",
-      "width": 27,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_Top/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_Top/map.bin"
     },
     {
       "id": "LAYOUT_BATTLE_FRONTIER_BATTLE_DOME_LOBBY",
@@ -3682,16 +3412,6 @@
       "blockdata_filepath": "data/layouts/MirageTower_4F/map.bin"
     },
     {
-      "id": "LAYOUT_DESERT_UNDERPASS",
-      "name": "DesertUnderpass_Layout",
-      "width": 139,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/DesertUnderpass/border.bin",
-      "blockdata_filepath": "data/layouts/DesertUnderpass/map.bin"
-    },
-    {
       "id": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM",
       "name": "BattleFrontier_BattleTowerMultiPartnerRoom_Layout",
       "width": 21,
@@ -3832,16 +3552,6 @@
       "blockdata_filepath": "data/layouts/FarawayIsland_Interior/map.bin"
     },
     {
-      "id": "LAYOUT_BIRTH_ISLAND_EXTERIOR",
-      "name": "BirthIsland_Exterior_Layout",
-      "width": 30,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/BirthIsland_Exterior/border.bin",
-      "blockdata_filepath": "data/layouts/BirthIsland_Exterior/map.bin"
-    },
-    {
       "id": "LAYOUT_ISLAND_HARBOR",
       "name": "IslandHarbor_Layout",
       "width": 17,
@@ -3870,26 +3580,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MarineCave_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/MarineCave_Entrance/map.bin"
-    },
-    {
-      "id": "LAYOUT_TERRA_CAVE_ENTRANCE",
-      "name": "TerraCave_Entrance_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/TerraCave_Entrance/border.bin",
-      "blockdata_filepath": "data/layouts/TerraCave_Entrance/map.bin"
-    },
-    {
-      "id": "LAYOUT_TERRA_CAVE_END",
-      "name": "TerraCave_End_Layout",
-      "width": 27,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/TerraCave_End/border.bin",
-      "blockdata_filepath": "data/layouts/TerraCave_End/map.bin"
     },
     {
       "id": "LAYOUT_UNDERWATER_ROUTE105",
@@ -4120,66 +3810,6 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/LittlerootTown_ProfessorBirchsLabWithTable/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootTown_ProfessorBirchsLabWithTable/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_1F_CLEAN",
-      "name": "SkyPillar_1F_Clean_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_1F_Clean/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_1F_Clean/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_2F_CLEAN",
-      "name": "SkyPillar_2F_Clean_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_2F_Clean/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_2F_Clean/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_3F_CLEAN",
-      "name": "SkyPillar_3F_Clean_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_3F_Clean/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_3F_Clean/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_4F_CLEAN",
-      "name": "SkyPillar_4F_Clean_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_4F_Clean/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_4F_Clean/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_5F_CLEAN",
-      "name": "SkyPillar_5F_Clean_Layout",
-      "width": 14,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_5F_Clean/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_5F_Clean/map.bin"
-    },
-    {
-      "id": "LAYOUT_SKY_PILLAR_TOP_CLEAN",
-      "name": "SkyPillar_Top_Clean_Layout",
-      "width": 27,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
-      "border_filepath": "data/layouts/SkyPillar_Top_Clean/border.bin",
-      "blockdata_filepath": "data/layouts/SkyPillar_Top_Clean/map.bin"
     }
   ]
 }

@@ -135,7 +135,7 @@
       "x": 36,
       "y": 6,
       "elevation": 3,
-      "dest_map": "MAP_SKY_PILLAR_ENTRANCE",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "0"
     }
   ],

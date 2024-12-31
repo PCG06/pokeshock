@@ -103,11 +103,6 @@ bool8 CheckRelicanthWailord(void)
     return FALSE;
 }
 
-// THEORY: this was caused by block commenting out all of the older R/S braille functions but leaving the call to it itself, which creates the nullsub.
-void ShouldDoBrailleRegirockEffectOld(void)
-{
-}
-
 #define tDelayCounter  data[1]
 #define tShakeCounter  data[2]
 #define tVerticalPan   data[4]
@@ -163,32 +158,6 @@ static void Task_SealedChamberShakingEffect(u8 taskId)
 #undef tVerticalPan
 #undef tDelay
 #undef tNumShakes
-
-bool8 ShouldDoBrailleRegirockEffect(void)
-{
-    if (!FlagGet(FLAG_SYS_REGIROCK_PUZZLE_COMPLETED)
-        && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DESERT_RUINS)
-        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DESERT_RUINS))
-    {
-        if (gSaveBlock1Ptr->pos.x == 6 && gSaveBlock1Ptr->pos.y == 23)
-        {
-            sIsRegisteelPuzzle = FALSE;
-            return TRUE;
-        }
-        else if (gSaveBlock1Ptr->pos.x == 5 && gSaveBlock1Ptr->pos.y == 23)
-        {
-            sIsRegisteelPuzzle = FALSE;
-            return TRUE;
-        }
-        else if (gSaveBlock1Ptr->pos.x == 7 && gSaveBlock1Ptr->pos.y == 23)
-        {
-            sIsRegisteelPuzzle = FALSE;
-            return TRUE;
-        }
-    }
-
-    return FALSE;
-}
 
 void SetUpPuzzleEffectRegirock(void)
 {
@@ -264,69 +233,5 @@ bool8 FldEff_UsePuzzleEffect(void)
         gTasks[taskId].data[8] = (u32)UseRegirockHm_Callback >> 16;
         gTasks[taskId].data[9] = (u32)UseRegirockHm_Callback;
     }
-    return FALSE;
-}
-
-// The puzzle to unlock Regice's cave requires the player to interact with the braille message on the back wall,
-// step on every space on the perimeter of the cave (and only those spaces) then return to the back wall.
-bool8 ShouldDoBrailleRegicePuzzle(void)
-{
-    u8 i;
-
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ISLAND_CAVE)
-        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ISLAND_CAVE))
-    {
-        if (FlagGet(FLAG_SYS_BRAILLE_REGICE_COMPLETED))
-            return FALSE;
-        // Set when the player interacts with the braille message
-        if (FlagGet(FLAG_TEMP_REGICE_PUZZLE_STARTED) == FALSE)
-            return FALSE;
-        // Cleared when the player interacts with the braille message
-        if (FlagGet(FLAG_TEMP_REGICE_PUZZLE_FAILED) == TRUE)
-            return FALSE;
-
-        for (i = 0; i < ARRAY_COUNT(sRegicePathCoords); i++)
-        {
-            u8 xPos = sRegicePathCoords[i][0];
-            u8 yPos = sRegicePathCoords[i][1];
-            if (gSaveBlock1Ptr->pos.x == xPos && gSaveBlock1Ptr->pos.y == yPos)
-            {
-                // Player is standing on a correct space, set the corresponding bit
-                if (i < 16)
-                {
-                    u16 val = VarGet(VAR_REGICE_STEPS_1);
-                    val |= 1 << i;
-                    VarSet(VAR_REGICE_STEPS_1, val);
-                }
-                else if (i < 32)
-                {
-                    u16 val = VarGet(VAR_REGICE_STEPS_2);
-                    val |= 1 << (i - 16);
-                    VarSet(VAR_REGICE_STEPS_2, val);
-                }
-                else
-                {
-                    u16 val = VarGet(VAR_REGICE_STEPS_3);
-                    val |= 1 << (i - 32);
-                    VarSet(VAR_REGICE_STEPS_3, val);
-                }
-
-                // Make sure a full lap has been completed. There are 36 steps in a lap, so 16+16+4 bits to check across the 3 vars.
-                if (VarGet(VAR_REGICE_STEPS_1) != 0xFFFF || VarGet(VAR_REGICE_STEPS_2) != 0xFFFF || VarGet(VAR_REGICE_STEPS_3) != 0xF)
-                    return FALSE;
-
-                // A lap has been completed, the puzzle is complete when the player returns to the braille message.
-                if (gSaveBlock1Ptr->pos.x == 8 && gSaveBlock1Ptr->pos.y == 21)
-                    return TRUE;
-                else
-                    return FALSE;
-            }
-        }
-
-        // Player stepped on an incorrect space, puzzle failed.
-        FlagSet(FLAG_TEMP_REGICE_PUZZLE_FAILED);
-        FlagClear(FLAG_TEMP_REGICE_PUZZLE_STARTED);
-    }
-
     return FALSE;
 }

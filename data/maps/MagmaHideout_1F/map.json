@@ -98,7 +98,7 @@
       "x": 10,
       "y": 34,
       "elevation": 3,
-      "dest_map": "MAP_JAGGED_PASS",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "4"
     },
     {

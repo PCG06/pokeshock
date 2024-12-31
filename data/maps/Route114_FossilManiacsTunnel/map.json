@@ -47,7 +47,7 @@
       "x": 6,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_DESERT_UNDERPASS",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "0"
     }
   ],
