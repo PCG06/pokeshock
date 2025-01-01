@@ -1269,14 +1269,6 @@ bool8 MetatileBehavior_IsCuttableGrass(u8 metatileBehavior)
         return FALSE;
 }
 
-bool8 MetatileBehavior_IsRunningShoesManual(u8 metatileBehavior)
-{
-    if (metatileBehavior == MB_RUNNING_SHOES_INSTRUCTION)
-        return TRUE;
-    else
-        return FALSE;
-}
-
 bool8 MetatileBehavior_IsPictureBookShelf(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_PICTURE_BOOK_SHELF)

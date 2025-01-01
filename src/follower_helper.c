@@ -98,7 +98,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .emotion = FOLLOWER_EMOTION_HAPPY,
         .conditions =
         {
-            MATCH_MAP(EVER_GRANDE_CITY),
+            //MATCH_MAP(EVER_GRANDE_CITY),
         },
     },
     [COND_MSG_ROUTE_112] =
@@ -146,7 +146,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .emotion = FOLLOWER_EMOTION_PENSIVE,
         .conditions =
         {
-            MATCH_MAP(MAUVILLE_CITY_BIKE_SHOP)
+            //MATCH_MAP(MAUVILLE_CITY_BIKE_SHOP)
         },
     },
     [COND_MSG_MACHINES] =
@@ -217,7 +217,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .emotion = FOLLOWER_EMOTION_SURPRISE,
         .conditions =
         {
-            MATCH_MAP(LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR),
+            //MATCH_MAP(LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR),
         },
     },
     [COND_MSG_ICE_ROOM] =

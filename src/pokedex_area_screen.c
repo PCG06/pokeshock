@@ -30,7 +30,7 @@
 //   determined by the data for the corresponding MAPSEC in gRegionMapEntries.
 
 // Only maps in the following map groups have their encounters considered for the area screen
-#define MAP_GROUP_TOWNS_AND_ROUTES MAP_GROUP(PETALBURG_CITY)
+#define MAP_GROUP_TOWNS_AND_ROUTES MAP_GROUP(DEMO_TOWN)
 #define MAP_GROUP_SPECIAL_AREA 5//MAP_GROUP(DEMO_TOWN)
 
 #define AREA_SCREEN_WIDTH 32

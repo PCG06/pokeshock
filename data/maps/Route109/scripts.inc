@@ -6,11 +6,11 @@ Route109_MapScripts::
 
 Route109_EventScript_StartDepartForDewford::
 	call EventScript_BackupMrBrineyLocation
-	setobjectsubpriority LOCALID_BRINEY_R109, MAP_ROUTE109, 0
+	setobjectsubpriority 2, MAP_ROUTE109, 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE109, 0
-	applymovement LOCALID_BRINEY_R109, Route109_Movement_BrineyEnterBoat
+	applymovement 2, Route109_Movement_BrineyEnterBoat
 	waitmovement 0
-	removeobject LOCALID_BRINEY_R109
+	removeobject 2
 	switch VAR_FACING
 	case DIR_SOUTH, Route109_EventScript_EnterBoatSouth
 	case DIR_WEST, Route109_EventScript_EnterBoatWest
@@ -38,30 +38,28 @@ Route109_EventScript_EnterBoatWest::
 Route109_EventScript_DoSailToDewford::
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
 	call Common_EventScript_PlayBrineysBoatMusic
-	applymovement LOCALID_BOAT_R109, Route109_Movement_SailToDewford
+	applymovement 1, Route109_Movement_SailToDewford
 	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_SailToDewford
 	waitmovement 0
 	delay 50
 	call Common_EventScript_StopBrineysBoatMusic
-	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DEWFORD_TOWN
+	showobjectat OBJ_EVENT_ID_PLAYER, MAP_DYNAMIC
 	applymovement OBJ_EVENT_ID_PLAYER, Route109_Movement_PlayerExitBoat
 	waitmovement 0
-	addobject LOCALID_BOAT_DEWFORD
+	addobject 4
 	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	setobjectxyperm LOCALID_BRINEY_DEWFORD, 12, 8
-	addobject LOCALID_BRINEY_DEWFORD
-	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
-	applymovement LOCALID_BRINEY_DEWFORD, Route109_Movement_BrineyExitBoat
+	setobjectxyperm 2, 12, 8
+	addobject 2
+	setobjectsubpriority 2, MAP_DYNAMIC, 0
+	applymovement 2, Route109_Movement_BrineyExitBoat
 	waitmovement 0
 	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
 	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
-	hideobjectat LOCALID_BOAT_R109, MAP_ROUTE109
-	msgbox DewfordTown_Text_BrineyLandedInDewford, MSGBOX_DEFAULT
-	closemessage
+	hideobjectat 1, MAP_ROUTE109
 	copyvar VAR_BRINEY_LOCATION, VAR_0x8008
 	resetobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_ROUTE109
-	resetobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN
-	copyobjectxytoperm LOCALID_BRINEY_DEWFORD
+	resetobjectsubpriority 2, MAP_DYNAMIC
+	copyobjectxytoperm 2
 	release
 	end
 

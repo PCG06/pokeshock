@@ -137,14 +137,14 @@
       "x": 15,
       "y": 40,
       "elevation": 3,
-      "dest_map": "MAP_EVER_GRANDE_CITY",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "2"
     },
     {
       "x": 39,
       "y": 5,
       "elevation": 3,
-      "dest_map": "MAP_EVER_GRANDE_CITY",
+      "dest_map": "MAP_DYNAMIC",
       "dest_warp_id": "3"
     },
     {
