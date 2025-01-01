@@ -278,22 +278,6 @@ void EndTruckSequence(u8 taskId)
     }
 }
 
-bool8 TrySetPortholeWarpDestination(void)
-{
-    s8 mapGroup, mapNum;
-    s16 x, y;
-
-    if (GetSSTidalLocation(&mapGroup, &mapNum, &x, &y) != SS_TIDAL_LOCATION_CURRENTS)
-    {
-        return FALSE;
-    }
-    else
-    {
-        SetWarpDestination(mapGroup, mapNum, WARP_ID_NONE, x, y);
-        return TRUE;
-    }
-}
-
 void Task_HandlePorthole(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
@@ -314,15 +298,6 @@ void Task_HandlePorthole(u8 taskId)
             data[1] = 1;
         if (!ScriptMovement_IsObjectMovementFinished(OBJ_EVENT_ID_PLAYER, location->mapNum, location->mapGroup))
             return;
-        if (CountSSTidalStep(1) == TRUE)
-        {
-            if (*cruiseState == SS_TIDAL_DEPART_SLATEPORT)
-                *cruiseState = SS_TIDAL_EXIT_CURRENTS_RIGHT;
-            else
-                *cruiseState = SS_TIDAL_EXIT_CURRENTS_LEFT;
-            data[0] = EXIT_PORTHOLE;
-            return;
-        }
         data[0] = EXECUTE_MOVEMENT;
         //fallthrough
     case EXECUTE_MOVEMENT:
@@ -372,14 +347,4 @@ void FieldCB_ShowPortholeView(void)
     FadeInFromBlack();
     CreateTask(Task_HandlePorthole, 80);
     LockPlayerFieldControls();
-}
-
-void LookThroughPorthole(void)
-{
-    FlagSet(FLAG_SYS_CRUISE_MODE);
-    FlagSet(FLAG_DONT_TRANSITION_MUSIC);
-    FlagSet(FLAG_HIDE_MAP_NAME_POPUP);
-    SetDynamicWarp(0, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE);
-    TrySetPortholeWarpDestination();
-    DoPortholeWarp();
 }

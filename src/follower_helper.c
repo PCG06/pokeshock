@@ -107,7 +107,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .emotion = FOLLOWER_EMOTION_HAPPY,
         .conditions =
         {
-            MATCH_MAP(ROUTE112),
+            //MATCH_MAP(ROUTE112),
         },
     },
     [COND_MSG_DAY_CARE] =
@@ -117,7 +117,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .emotion = FOLLOWER_EMOTION_NEUTRAL,
         .conditions =
         {
-            MATCH_MAP(ROUTE117_POKEMON_DAY_CARE)
+            //MATCH_MAP(ROUTE117_POKEMON_DAY_CARE)
         },
     },
     [COND_MSG_MART] =
@@ -158,8 +158,8 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .conditions =
         {
             //MATCH_MAP(NEW_MAUVILLE_INSIDE),
-            MATCH_MAP(SLATEPORT_CITY_STERNS_SHIPYARD_1F),
-            MATCH_MAP(SLATEPORT_CITY_STERNS_SHIPYARD_2F),
+            //MATCH_MAP(SLATEPORT_CITY_STERNS_SHIPYARD_1F),
+            //MATCH_MAP(SLATEPORT_CITY_STERNS_SHIPYARD_2F),
         },
     },
     [COND_MSG_SAILING] =
@@ -236,7 +236,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .emotion = FOLLOWER_EMOTION_SURPRISE,
         .conditions =
         {
-            MATCH_MAP(ROUTE117),
+            //MATCH_MAP(ROUTE117),
         },
     },
     [COND_MSG_DRAGON_GROWL] =

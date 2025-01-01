@@ -452,8 +452,6 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
         return EventScript_CableBoxResults;
     if (MetatileBehavior_IsPokeblockFeeder(metatileBehavior) == TRUE)
         return EventScript_PokeBlockFeeder;
-    if (MetatileBehavior_IsTrickHousePuzzleDoor(metatileBehavior) == TRUE)
-        return Route110_TrickHousePuzzle_EventScript_Door;
     if (MetatileBehavior_IsRegionMap(metatileBehavior) == TRUE)
         return EventScript_RegionMap;
     if (MetatileBehavior_IsPictureBookShelf(metatileBehavior) == TRUE)
@@ -629,21 +627,6 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(EventScript_EggHatch);
             return TRUE;
         }
-        if (AbnormalWeatherHasExpired() == TRUE)
-        {
-            ScriptContext_SetupScript(AbnormalWeather_EventScript_EndEventAndCleanup_1);
-            return TRUE;
-        }
-        if (ShouldDoScottFortreeCall() == TRUE)
-        {
-            ScriptContext_SetupScript(Route119_EventScript_ScottWonAtFortreeGymCall);
-            return TRUE;
-        }
-        if (ShouldDoRoxanneCall() == TRUE)
-        {
-            ScriptContext_SetupScript(RustboroCity_Gym_EventScript_RegisterRoxanne);
-            return TRUE;
-        }
         if (UpdateVsSeekerStepCounter())
         {
             ScriptContext_SetupScript(EventScript_VsSeekerChargingDone);
@@ -653,11 +636,6 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
 
     if (SafariZoneTakeStep() == TRUE)
         return TRUE;
-    if (CountSSTidalStep(1) == TRUE)
-    {
-        ScriptContext_SetupScript(SSTidalCorridor_EventScript_ReachedStepCount);
-        return TRUE;
-    }
     if (TryStartMatchCall())
         return TRUE;
     return FALSE;

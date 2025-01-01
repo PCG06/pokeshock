@@ -1059,14 +1059,6 @@ bool8 MetatileBehavior_IsPacifidlogLog(u8 metatileBehavior)
         return FALSE;
 }
 
-bool8 MetatileBehavior_IsTrickHousePuzzleDoor(u8 metatileBehavior)
-{
-    if (metatileBehavior == MB_TRICK_HOUSE_PUZZLE_DOOR)
-        return TRUE;
-    else
-        return FALSE;
-}
-
 bool8 MetatileBehavior_IsRegionMap(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_REGION_MAP)

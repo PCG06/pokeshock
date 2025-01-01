@@ -543,7 +543,6 @@ extern const u8 EventScript_HiddenItemScript[];
 extern const u8 EventScript_TV[];
 extern const u8 EventScript_CableBoxResults[];
 extern const u8 EventScript_PokeBlockFeeder[];
-extern const u8 Route110_TrickHousePuzzle_EventScript_Door[];
 extern const u8 EventScript_RegionMap[];
 extern const u8 EventScript_PictureBookShelf[];
 extern const u8 EventScript_BookShelf[];
@@ -564,11 +563,8 @@ extern const u8 EventScript_UseDiveUnderwater[];
 extern const u8 EventScript_FallDownHole[];
 extern const u8 EventScript_FieldPoison[];
 extern const u8 EventScript_EggHatch[];
-extern const u8 AbnormalWeather_EventScript_EndEventAndCleanup_1[];
 extern const u8 IslandCave_EventScript_OpenRegiEntrance[];
 extern const u8 Route119_EventScript_ScottWonAtFortreeGymCall[];
-extern const u8 RustboroCity_Gym_EventScript_RegisterRoxanne[];
-extern const u8 SSTidalCorridor_EventScript_ReachedStepCount[];
 extern const u8 EventScript_FallDownHoleMtPyre[];
 
 // Secret Base

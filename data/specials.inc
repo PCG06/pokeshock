@@ -280,7 +280,6 @@ gSpecials::
 	def_special CheckLeadMonCute
 	def_special CheckLeadMonSmart
 	def_special CheckLeadMonTough
-	def_special LookThroughPorthole
 	def_special DoSoftReset
 	def_special GameClear
 	def_special MoveElevator
@@ -302,7 +301,6 @@ gSpecials::
 	def_special Script_FacePlayer
 	def_special Script_ClearHeldMovement
 	def_special InitRoamer
-	def_special TryUpdateRusturfTunnelState
 	def_special IsGrassTypeInParty
 	def_special DoContestHallWarp
 	def_special LoadWallyZigzagoon
@@ -492,7 +490,6 @@ gSpecials::
 	def_special SetMatchCallRegisteredFlag
 	def_special DoDomeConfetti
 	def_special CreateAbnormalWeatherEvent
-	def_special GetAbnormalWeatherMapNameAndType
 	def_special GetMartEmployeeObjectEventId
 	def_special SaveForBattleTowerLink
 	def_special Unused_SetWeatherSunny

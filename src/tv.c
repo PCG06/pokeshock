@@ -198,32 +198,8 @@ static const struct {
         .species = SPECIES_SEEDOT,
         .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
         .level = 3,
-        .location = MAP_NUM(ROUTE102)
+        .location = MAP_NUM(DEMO_TOWN)
     },
-    {
-        .species = SPECIES_NUZLEAF,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 15,
-        .location = MAP_NUM(ROUTE114),
-    },
-    {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
-        .level = 13,
-        .location = MAP_NUM(ROUTE117),
-    },
-    {
-        .species = SPECIES_SEEDOT,
-        .moves = {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
-        .level = 25,
-        .location = MAP_NUM(ROUTE120),
-    },
-    {
-        .species = SPECIES_SKITTY,
-        .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ATTRACT},
-        .level = 8,
-        .location = MAP_NUM(ROUTE116),
-    }
 };
 
 static const u16 sGoldSymbolFlags[NUM_FRONTIER_FACILITIES] = {
@@ -2644,9 +2620,7 @@ static bool8 ShouldApplyPokeNewsEffect(u8 newsKind)
     switch (newsKind)
     {
     case POKENEWS_SLATEPORT:
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SLATEPORT_CITY)
-         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SLATEPORT_CITY)
-         && gSpecialVar_LastTalked == LOCALID_SLATEPORT_ENERGY_GURU)
+        if (gSpecialVar_LastTalked == LOCALID_SLATEPORT_ENERGY_GURU)
             return TRUE;
         return FALSE;
     case POKENEWS_LILYCOVE:
@@ -5483,11 +5457,6 @@ static void DoTVShowTodaysRivalTrainer(void)
         case MAPSEC_DYNAMIC:
             switch (show->rivalTrainer.mapLayoutId)
             {
-            case LAYOUT_SS_TIDAL_CORRIDOR:
-            case LAYOUT_SS_TIDAL_LOWER_DECK:
-            case LAYOUT_SS_TIDAL_ROOMS:
-                sTVShowState = 10;
-                break;
             default:
                 sTVShowState = 9;
                 break;
@@ -5644,11 +5613,6 @@ static void DoTVShowHoennTreasureInvestigators(void)
         {
             switch (show->treasureInvestigators.mapLayoutId)
             {
-            case LAYOUT_SS_TIDAL_CORRIDOR:
-            case LAYOUT_SS_TIDAL_LOWER_DECK:
-            case LAYOUT_SS_TIDAL_ROOMS:
-                sTVShowState = 2;
-                break;
             default:
                 sTVShowState = 1;
                 break;

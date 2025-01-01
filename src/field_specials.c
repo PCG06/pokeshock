@@ -278,9 +278,6 @@ u16 GetRecordedCyclingRoadResults(void)
 
 void UpdateCyclingRoadState(void)
 {
-    if (gLastUsedWarp.mapNum == MAP_NUM(ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE) && gLastUsedWarp.mapGroup == MAP_GROUP(ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE))
-        return;
-
     if (VarGet(VAR_CYCLING_CHALLENGE_STATE) == 2 || VarGet(VAR_CYCLING_CHALLENGE_STATE) == 3)
     {
         VarSet(VAR_CYCLING_CHALLENGE_STATE, 0);
@@ -297,122 +294,6 @@ void SetSSTidalFlag(void)
 void ResetSSTidalFlag(void)
 {
     FlagClear(FLAG_SYS_CRUISE_MODE);
-}
-
-// Returns TRUE if the Cruise is over
-bool32 CountSSTidalStep(u16 delta)
-{
-    if (!FlagGet(FLAG_SYS_CRUISE_MODE) || (*GetVarPointer(VAR_CRUISE_STEP_COUNT) += delta) < SS_TIDAL_MAX_STEPS)
-        return FALSE;
-
-    return TRUE;
-}
-
-u8 GetSSTidalLocation(s8 *mapGroup, s8 *mapNum, s16 *x, s16 *y)
-{
-    u16 *varCruiseStepCount = GetVarPointer(VAR_CRUISE_STEP_COUNT);
-    switch (*GetVarPointer(VAR_SS_TIDAL_STATE))
-    {
-    case SS_TIDAL_BOARD_SLATEPORT:
-    case SS_TIDAL_LAND_SLATEPORT:
-        return SS_TIDAL_LOCATION_SLATEPORT;
-    case SS_TIDAL_HALFWAY_LILYCOVE:
-    case SS_TIDAL_EXIT_CURRENTS_RIGHT:
-        return SS_TIDAL_LOCATION_ROUTE131;
-    case SS_TIDAL_LAND_LILYCOVE:
-    case SS_TIDAL_BOARD_LILYCOVE:
-        return SS_TIDAL_LOCATION_LILYCOVE;
-    case SS_TIDAL_DEPART_LILYCOVE:
-    case SS_TIDAL_EXIT_CURRENTS_LEFT:
-        return SS_TIDAL_LOCATION_ROUTE124;
-    case SS_TIDAL_DEPART_SLATEPORT:
-        if (*varCruiseStepCount < 60)
-        {
-            *mapNum = MAP_NUM(ROUTE134);
-            *x = *varCruiseStepCount + 19;
-        }
-        else if (*varCruiseStepCount < 140)
-        {
-            *mapNum = MAP_NUM(ROUTE133);
-            *x = *varCruiseStepCount - 60;
-        }
-        else
-        {
-            *mapNum = MAP_NUM(ROUTE132);
-            *x = *varCruiseStepCount - 140;
-        }
-        break;
-    case SS_TIDAL_HALFWAY_SLATEPORT:
-        if (*varCruiseStepCount < 66)
-        {
-            *mapNum = MAP_NUM(ROUTE132);
-            *x = 65 - *varCruiseStepCount;
-        }
-        else if (*varCruiseStepCount < 146)
-        {
-            *mapNum = MAP_NUM(ROUTE133);
-            *x = 145 - *varCruiseStepCount;
-        }
-        else
-        {
-            *mapNum = MAP_NUM(ROUTE134);
-            *x = 224 - *varCruiseStepCount;
-        }
-        break;
-    }
-    *mapGroup = MAP_GROUP(ROUTE132);
-    *y = 20;
-    return SS_TIDAL_LOCATION_CURRENTS;
-}
-
-bool32 ShouldDoScottFortreeCall(void)
-{
-    if (FlagGet(FLAG_SCOTT_CALL_FORTREE_GYM))
-    {
-        switch (gMapHeader.mapType)
-        {
-        case MAP_TYPE_TOWN:
-        case MAP_TYPE_CITY:
-        case MAP_TYPE_ROUTE:
-        case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_SCOTT_FORTREE_CALL_STEP_COUNTER)) < 10)
-                return FALSE;
-            break;
-        default:
-            return FALSE;
-        }
-    }
-    else
-    {
-        return FALSE;
-    }
-
-    return TRUE;
-}
-
-bool32 ShouldDoRoxanneCall(void)
-{
-    if (FlagGet(FLAG_ENABLE_ROXANNE_FIRST_CALL))
-    {
-        switch (gMapHeader.mapType)
-        {
-        case MAP_TYPE_TOWN:
-        case MAP_TYPE_CITY:
-        case MAP_TYPE_ROUTE:
-        case MAP_TYPE_OCEAN_ROUTE:
-            if (++(*GetVarPointer(VAR_ROXANNE_CALL_STEP_COUNTER)) < 250)
-                return FALSE;
-            break;
-        default:
-            return FALSE;
-        }
-    }
-    else
-    {
-        return FALSE;
-    }
-
-    return TRUE;
 }
 
 u8 GetLinkPartnerNames(void)
@@ -1297,26 +1178,6 @@ bool8 Special_AreLeadMonEVsMaxedOut(void)
     return FALSE;
 }
 
-u8 TryUpdateRusturfTunnelState(void)
-{
-    if (!FlagGet(FLAG_RUSTURF_TUNNEL_OPENED)
-        && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RUSTURF_TUNNEL)
-        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RUSTURF_TUNNEL))
-    {
-        if (FlagGet(FLAG_HIDE_RUSTURF_TUNNEL_ROCK_1))
-        {
-            VarSet(VAR_RUSTURF_TUNNEL_STATE, 4);
-            return TRUE;
-        }
-        else if (FlagGet(FLAG_HIDE_RUSTURF_TUNNEL_ROCK_2))
-        {
-            VarSet(VAR_RUSTURF_TUNNEL_STATE, 5);
-            return TRUE;
-        }
-    }
-    return FALSE;
-}
-
 void SetShoalItemFlag(u16 unused)
 {
     FlagSet(FLAG_SYS_SHOAL_ITEM);
@@ -1859,8 +1720,6 @@ bool8 UsedPokemonCenterWarp(void)
     static const u16 sPokemonCenters[] =
     {
         MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F,
-        MAP_SLATEPORT_CITY_POKEMON_CENTER_1F,
-        MAP_RUSTBORO_CITY_POKEMON_CENTER_1F,
         MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F,
         MAP_UNION_ROOM,
         MAP_UNDEFINED
@@ -3157,116 +3016,6 @@ void CreateAbnormalWeatherEvent(void)
     }
 }
 
-// Saves the map name for the current abnormal weather location in gStringVar1, then
-// returns TRUE if the weather is for Kyogre, and FALSE if it's for Groudon.
-bool32 GetAbnormalWeatherMapNameAndType(void)
-{
-    static const u8 sAbnormalWeatherMapNumbers[] = {
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE105),
-        MAP_NUM(ROUTE105),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE129),
-        MAP_NUM(ROUTE129)
-    };
-
-    u16 abnormalWeather = VarGet(VAR_ABNORMAL_WEATHER_LOCATION);
-
-    GetMapName(gStringVar1, sAbnormalWeatherMapNumbers[abnormalWeather - 1], 0);
-
-    if (abnormalWeather < MARINE_CAVE_LOCATIONS_START)
-        return FALSE;
-    else
-        return TRUE;
-}
-
-bool8 AbnormalWeatherHasExpired(void)
-{
-    // Duplicate array.
-    static const u8 sAbnormalWeatherMapNumbers[] =
-    {
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE114),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE115),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE116),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE118),
-        MAP_NUM(ROUTE105),
-        MAP_NUM(ROUTE105),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE125),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE127),
-        MAP_NUM(ROUTE129),
-        MAP_NUM(ROUTE129)
-    };
-
-    u16 steps = VarGet(VAR_ABNORMAL_WEATHER_STEP_COUNTER);
-    u16 abnormalWeather = VarGet(VAR_ABNORMAL_WEATHER_LOCATION);
-
-    if (abnormalWeather == ABNORMAL_WEATHER_NONE)
-        return FALSE;
-
-    if (++steps > 999)
-    {
-        VarSet(VAR_ABNORMAL_WEATHER_STEP_COUNTER, 0);
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNDERWATER_MARINE_CAVE))
-        {
-            switch (gSaveBlock1Ptr->location.mapNum)
-            {
-            case MAP_NUM(UNDERWATER_MARINE_CAVE):
-                VarSet(VAR_SHOULD_END_ABNORMAL_WEATHER, 1);
-                return FALSE;
-            default:
-                break;
-            }
-        }
-
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNDERWATER_ROUTE127))
-        {
-            switch (gSaveBlock1Ptr->location.mapNum)
-            {
-            case MAP_NUM(UNDERWATER_ROUTE127):
-            case MAP_NUM(UNDERWATER_ROUTE129):
-            case MAP_NUM(UNDERWATER_ROUTE105):
-            case MAP_NUM(UNDERWATER_ROUTE125):
-                VarSet(VAR_SHOULD_END_ABNORMAL_WEATHER, 1);
-                return FALSE;
-            default:
-                break;
-            }
-        }
-
-        if (gSaveBlock1Ptr->location.mapNum == sAbnormalWeatherMapNumbers[abnormalWeather - 1] &&
-            gSaveBlock1Ptr->location.mapGroup == 0)
-        {
-            return TRUE;
-        }
-        else
-        {
-            VarSet(VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_NONE);
-            return FALSE;
-        }
-    }
-    else
-    {
-        VarSet(VAR_ABNORMAL_WEATHER_STEP_COUNTER, steps);
-        return FALSE;
-    }
-}
-
 void Unused_SetWeatherSunny(void)
 {
     SetCurrentAndNextWeather(WEATHER_SUNNY);
@@ -3278,8 +3027,6 @@ u32 GetMartEmployeeObjectEventId(void)
     static const u8 sPokeMarts[][3] =
     {
         { MAP_GROUP(VERDANTURF_TOWN_MART), MAP_NUM(VERDANTURF_TOWN_MART), LOCALID_VERDANTURF_MART_CLERK },
-        { MAP_GROUP(SLATEPORT_CITY_MART),  MAP_NUM(SLATEPORT_CITY_MART),  LOCALID_SLATEPORT_MART_CLERK },
-        { MAP_GROUP(RUSTBORO_CITY_MART),   MAP_NUM(RUSTBORO_CITY_MART),   LOCALID_RUSTBORO_MART_CLERK },
         { MAP_GROUP(BATTLE_FRONTIER_MART), MAP_NUM(BATTLE_FRONTIER_MART), LOCALID_BATTLE_FRONTIER_MART_CLERK }
     };
 
@@ -3562,8 +3309,6 @@ bool8 InPokemonCenter(void)
     static const u16 sPokemonCenters[] =
     {
         MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F,
-        MAP_SLATEPORT_CITY_POKEMON_CENTER_1F,
-        MAP_RUSTBORO_CITY_POKEMON_CENTER_1F,
         MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F,
         MAP_BATTLE_COLOSSEUM_2P,
         MAP_TRADE_CENTER,
