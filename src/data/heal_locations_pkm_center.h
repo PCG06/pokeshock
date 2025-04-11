@@ -2,12 +2,6 @@
 
 static const struct HealLocation sHealLocationsPokemonCenter[HEAL_LOCATION_COUNT - 1] =
 {
-    [HEAL_LOCATION_VERDANTURF_TOWN - 1] =
-    {
-        .group = MAP_GROUP(VERDANTURF_TOWN_POKEMON_CENTER_1F),
-        .map = MAP_NUM(VERDANTURF_TOWN_POKEMON_CENTER_1F),
-        DEFAULT_POKEMON_CENTER_COORDS,
-    },
     [HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST - 1] =
     {
         .group = MAP_GROUP(BATTLE_FRONTIER_POKEMON_CENTER_1F),
