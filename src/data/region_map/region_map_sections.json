@@ -1,6 +1,14 @@
 {
   "map_sections": [
     {
+      "map_section": "MAPSEC_DEMO_TOWN",
+      "name": "DEMO TOWN",
+      "x": 4,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
       "map_section": "MAPSEC_LITTLEROOT_TOWN",
       "name": "LITTLEROOT TOWN",
       "x": 4,
@@ -485,6 +493,14 @@
       "name": "RUSTURF TUNNEL",
       "x": 2,
       "y": 5,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ABANDONED_SHIP",
+      "name": "ABANDONED SHIP",
+      "x": 6,
+      "y": 14,
       "width": 1,
       "height": 1
     },

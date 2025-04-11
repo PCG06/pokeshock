@@ -3,7 +3,7 @@
   "name": "DemoTown",
   "layout": "LAYOUT_DEMO_TOWN",
   "music": "MUS_FORTREE",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_DEMO_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_TOWN",
