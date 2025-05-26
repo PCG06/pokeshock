@@ -791,7 +791,7 @@ static const u8 sHintTextTypes[] =
     HINT_EXIT_SHORT_REMAINING_ITEMS,
 };
 
-static void (* const sBattlePyramidFunctions[])(void) =
+static void (*const sBattlePyramidFunctions[])(void) =
 {
     [BATTLE_PYRAMID_FUNC_INIT]              = InitPyramidChallenge,
     [BATTLE_PYRAMID_FUNC_GET_DATA]          = GetBattlePyramidData,
@@ -1368,9 +1368,7 @@ static bool32 CheckBattlePyramidEvoRequirement(u16 species, const u16 *evoItems,
         for (j = 0; evolutions[j].method != EVOLUTIONS_END; j++)
         {
             if (evolutions[j].targetSpecies == species
-                && (evolutions[j].method == EVO_ITEM
-                 || evolutions[j].method == EVO_ITEM_MALE
-                 || evolutions[j].method == EVO_ITEM_FEMALE))
+                && (evolutions[j].method == EVO_ITEM))
             {
                 if (nItems == 0)
                 {
