@@ -1,5 +1,10 @@
 DemoTown_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, DemoTown_OnTransition
 	.byte 0
+
+DemoTown_OnTransition:
+	setrespawn HEAL_LOCATION_DEMO_TOWN
+	end
 
 DemoTown_Text_Sign_ExpansionDebugMenu:
 	.string "Expansion Tips!\p"
