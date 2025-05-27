@@ -1000,22 +1000,6 @@ void EndLotteryCornerComputerEffect(void)
 #undef tTimer
 #undef tIsScreenOn
 
-void SetTrickHouseNuggetFlag(void)
-{
-    u16 *specVar = &gSpecialVar_0x8004;
-    u16 flag = FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET;
-    *specVar = flag;
-    FlagSet(flag);
-}
-
-void ResetTrickHouseNuggetFlag(void)
-{
-    u16 *specVar = &gSpecialVar_0x8004;
-    u16 flag = FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET;
-    *specVar = flag;
-    FlagClear(flag);
-}
-
 bool8 CheckLeadMonCool(void)
 {
     if (GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_COOL) < 200)
@@ -1275,11 +1259,6 @@ static void StopCameraShake(u8 taskId)
 #undef tNumShakes
 #undef tDelay
 #undef tVerticalPan
-
-bool8 FoundBlackGlasses(void)
-{
-    return FlagGet(FLAG_HIDDEN_ITEM_ROUTE_116_BLACK_GLASSES);
-}
 
 void SetRoute119Weather(void)
 {
@@ -2999,15 +2978,7 @@ void CreateAbnormalWeatherEvent(void)
     u16 randomValue = Random();
     VarSet(VAR_ABNORMAL_WEATHER_STEP_COUNTER, 0);
 
-    if (FlagGet(FLAG_DEFEATED_KYOGRE) == TRUE)
-    {
-        VarSet(VAR_ABNORMAL_WEATHER_LOCATION, (randomValue % TERRA_CAVE_LOCATIONS) + TERRA_CAVE_LOCATIONS_START);
-    }
-    else if (FlagGet(FLAG_DEFEATED_GROUDON) == TRUE)
-    {
-        VarSet(VAR_ABNORMAL_WEATHER_LOCATION, (randomValue % MARINE_CAVE_LOCATIONS) + MARINE_CAVE_LOCATIONS_START);
-    }
-    else if ((randomValue & 1) == 0)
+    if ((randomValue & 1) == 0)
     {
         randomValue = Random();
         VarSet(VAR_ABNORMAL_WEATHER_LOCATION, (randomValue % TERRA_CAVE_LOCATIONS) + TERRA_CAVE_LOCATIONS_START);
@@ -3394,11 +3365,6 @@ void UpdateTrainerFanClubGameClear(void)
         SetPlayerGotFirstFans();
         SetInitialFansOfPlayer();
         gSaveBlock1Ptr->vars[VAR_FANCLUB_LOSE_FAN_TIMER - VARS_START] = gSaveBlock2Ptr->playTimeHours;
-        FlagClear(FLAG_HIDE_FANCLUB_OLD_LADY);
-        FlagClear(FLAG_HIDE_FANCLUB_BOY);
-        FlagClear(FLAG_HIDE_FANCLUB_LITTLE_BOY);
-        FlagClear(FLAG_HIDE_FANCLUB_LADY);
-        FlagClear(FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER);
         VarSet(VAR_LILYCOVE_FAN_CLUB_STATE, 1);
     }
 }

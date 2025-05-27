@@ -402,7 +402,6 @@ void Overworld_ResetStateAfterTeleport(void)
     FlagClear(FLAG_SYS_SAFARI_MODE);
     FlagClear(FLAG_SYS_USE_STRENGTH);
     FlagClear(FLAG_SYS_USE_FLASH);
-    RunScriptImmediately(EventScript_ResetMrBriney);
 }
 
 void Overworld_ResetStateAfterDigEscRope(void)

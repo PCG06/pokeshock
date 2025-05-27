@@ -1060,11 +1060,6 @@ ContestHall_EventScript_CheckRankIsMaster::
 ContestHall_EventScript_DontSkipPrize::
 	return
 
-@ This flag is never read
-ContestHall_EventScript_SetSketchFlag::
-	setflag FLAG_CONTEST_SKETCH_CREATED
-	return
-
 ContestHall_EventScript_SetReadyForContestArtist::
 	setvar VAR_LILYCOVE_CONTEST_LOBBY_STATE, 1
 	return
@@ -1132,7 +1127,6 @@ ContestHall_EventScript_GivePrizeIfWinner::
 	return
 
 ContestHall_EventScript_GiveContestPrizes::
-	call_if_eq VAR_CONTEST_TYPE, CONTEST_TYPE_NPC_SUPER, ContestHall_EventScript_SetSketchFlag
 	specialvar VAR_RESULT, HasMonWonThisContestBefore
 	goto_if_eq VAR_RESULT, FALSE, ContestHall_EventScript_ReceiveContestRibbon
 	goto_if_eq VAR_CONTEST_RANK, CONTEST_RANK_MASTER, ContestHall_EventScript_GiveLuxuryBall

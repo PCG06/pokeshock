@@ -277,8 +277,6 @@ gSpecials::
 	def_special RetrieveLotteryNumber
 	def_special PickLotteryCornerTicket
 	def_special ShowBerryBlenderRecordWindow
-	def_special ResetTrickHouseNuggetFlag
-	def_special SetTrickHouseNuggetFlag
 	def_special ScriptMenu_CreatePCMultichoice
 	def_special AccessHallOfFamePC
 	def_special Special_ShowDiploma
@@ -325,7 +323,6 @@ gSpecials::
 	def_special StartRegiBattle
 	def_special SetTrainerFacingDirection
 	def_special DoSealedChamberShakingEffect_Short
-	def_special FoundBlackGlasses
 	def_special StartDroughtWeatherBlend
 	def_special DoDiveWarp
 	def_special DoFallWarp
@@ -503,7 +500,6 @@ gSpecials::
 	def_special SetUnlockedPokedexFlags
 	def_special IsTrainerRegistered
 	def_special EnableNationalPokedex
-	def_special ScriptMenu_CreateLilycoveSSTidalMultichoice
 	def_special GetLilycoveSSTidalSelection
 	def_special TurnOnTVScreen
 	def_special SetMewAboveGrass

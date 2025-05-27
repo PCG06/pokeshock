@@ -34,7 +34,6 @@ EventScript_MomDadMightLikeThis1::
 EventScript_PlayersHouseLatiNewsFlash::
 	special InitRoamer
 	clearflag FLAG_SYS_TV_LATIAS_LATIOS
-	setflag FLAG_LATIOS_OR_LATIAS_ROAMING
 	special TurnOffTVScreen
 	releaseall
 	end
