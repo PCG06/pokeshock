@@ -196,7 +196,6 @@ gSpecials::
 	def_special IsGabbyAndTyShowOnTheAir
 	def_special GabbyAndTyGetLastQuote
 	def_special GabbyAndTyGetLastBattleTrivia
-	def_special GetGabbyAndTyLocalIds
 	def_special GetBattleOutcome
 	def_special GetDaycareMonNicknames
 	def_special GetDaycareState
@@ -417,7 +416,6 @@ gSpecials::
 	def_special ShowMapNamePopup
 	def_special DoMirageTowerCeilingCrumble
 	def_special SetMirageTowerVisibility
-	def_special StartPlayerDescendMirageTower
 	def_special BufferTMHMMoveName
 	def_special IsWirelessAdapterConnected
 	def_special TryBecomeLinkLeader
@@ -502,14 +500,12 @@ gSpecials::
 	def_special EnableNationalPokedex
 	def_special GetLilycoveSSTidalSelection
 	def_special TurnOnTVScreen
-	def_special SetMewAboveGrass
 	def_special ShouldDistributeEonTicket
 	def_special LinkRetireStatusWithBattleTowerPartner
 	def_special BattleTowerReconnectLink
 	def_special CallTrainerHillFunction
 	def_special Script_DoRayquazaScene @ Listed twice
 	def_special LoopWingFlapSE
-	def_special DestroyMewEmergingGrassSprite
 	def_special ShowBerryCrushRankings
 	def_special TryBufferWaldaPhrase
 	def_special DoWaldaNamingScreen

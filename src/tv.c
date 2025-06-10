@@ -198,7 +198,7 @@ static const struct {
         .species = SPECIES_SEEDOT,
         .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
         .level = 3,
-        .location = MAP_NUM(DEMO_TOWN)
+        .location = MAP_NUM(MAP_DEMO_TOWN)
     },
 };
 
@@ -953,6 +953,7 @@ static void TakeGabbyAndTyOffTheAir(void)
     gSaveBlock1Ptr->gabbyAndTyData.onAir = FALSE;
 }
 
+// See gabby_and_ty.inc for details
 u8 GabbyAndTyGetBattleNum(void)
 {
     if (gSaveBlock1Ptr->gabbyAndTyData.battleNum > 5)
@@ -992,45 +993,6 @@ u8 GabbyAndTyGetLastBattleTrivia(void)
         return 4;
 
     return 0;
-}
-
-void GetGabbyAndTyLocalIds(void)
-{
-    switch (GabbyAndTyGetBattleNum())
-    {
-    case 1:
-        gSpecialVar_0x8004 = 14;
-        gSpecialVar_0x8005 = 13;
-        break;
-    case 2:
-        gSpecialVar_0x8004 = 5;
-        gSpecialVar_0x8005 = 6;
-        break;
-    case 3:
-        gSpecialVar_0x8004 = 18;
-        gSpecialVar_0x8005 = 17;
-        break;
-    case 4:
-        gSpecialVar_0x8004 = 21;
-        gSpecialVar_0x8005 = 22;
-        break;
-    case 5:
-        gSpecialVar_0x8004 = 8;
-        gSpecialVar_0x8005 = 9;
-        break;
-    case 6:
-        gSpecialVar_0x8004 = 19;
-        gSpecialVar_0x8005 = 20;
-        break;
-    case 7:
-        gSpecialVar_0x8004 = 23;
-        gSpecialVar_0x8005 = 24;
-        break;
-    case 8:
-        gSpecialVar_0x8004 = 10;
-        gSpecialVar_0x8005 = 11;
-        break;
-    }
 }
 
 void InterviewAfter(void)
@@ -1460,8 +1422,8 @@ void TryPutSmartShopperOnAir(void)
     TVShow *show;
     u8 i;
 
-    if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_HILL_ENTRANCE))
-     && !(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BATTLE_FRONTIER_MART) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BATTLE_FRONTIER_MART))
+    if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_TRAINER_HILL_ENTRANCE))
+     && !(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_BATTLE_FRONTIER_MART) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_MART))
      && !rbernoulli(1, 3))
     {
         sCurTVShowSlot = FindFirstEmptyRecordMixTVShowSlot(gSaveBlock1Ptr->tvShows);
@@ -2620,8 +2582,6 @@ static bool8 ShouldApplyPokeNewsEffect(u8 newsKind)
     switch (newsKind)
     {
     case POKENEWS_SLATEPORT:
-        if (gSpecialVar_LastTalked == LOCALID_SLATEPORT_ENERGY_GURU)
-            return TRUE;
         return FALSE;
     case POKENEWS_LILYCOVE:
         return FALSE;
@@ -3339,7 +3299,7 @@ void GetMomOrDadStringForTVMessage(void)
 void HideBattleTowerReporter(void)
 {
     VarSet(VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, 0);
-    RemoveObjectEventByLocalIdAndMap(LOCALID_BATTLE_TOWER_LOBBY_REPORTER, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
+    RemoveObjectEventByLocalIdAndMap(LOCALID_TOWER_LOBBY_REPORTER, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
     FlagSet(FLAG_HIDE_BATTLE_TOWER_REPORTER);
 }
 

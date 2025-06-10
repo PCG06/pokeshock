@@ -19,7 +19,7 @@ EWRAM_DATA static u8 sLocationHistory[ROAMER_COUNT][3][2] = {0};
 EWRAM_DATA static u8 sRoamerLocation[ROAMER_COUNT][2] = {0};
 EWRAM_DATA u8 gEncounteredRoamerIndex = 0;
 
-#define ___ MAP_NUM(UNDEFINED) // For empty spots in the location table
+#define ___ MAP_NUM(MAP_UNDEFINED) // For empty spots in the location table
 
 // Note: There are two potential softlocks that can occur with this table if its maps are
 //       changed in particular ways. They can be avoided by ensuring the following:
@@ -35,7 +35,7 @@ EWRAM_DATA u8 gEncounteredRoamerIndex = 0;
 //         from that map when it lands there.
 static const u8 sRoamerLocations[][6] =
 {
-    { MAP_NUM(DEMO_TOWN), MAP_NUM(DEMO_TOWN), MAP_NUM(DEMO_TOWN), ___, ___, ___ },
+    { MAP_NUM(MAP_DEMO_TOWN), MAP_NUM(MAP_DEMO_TOWN), MAP_NUM(MAP_DEMO_TOWN), ___, ___, ___ },
     { ___, ___, ___, ___, ___, ___ },
 };
 
@@ -201,7 +201,7 @@ void RoamerMove(u32 roamerIndex)
                     mapNum = sRoamerLocations[locSet][(Random() % (NUM_LOCATIONS_PER_SET - 1)) + 1];
                 } while ((sLocationHistory[roamerIndex][2][MAP_GRP] == ROAMER_MAP_GROUP
                         && sLocationHistory[roamerIndex][2][MAP_NUM] == mapNum)
-                        || mapNum == MAP_NUM(UNDEFINED));
+                        || mapNum == MAP_NUM(MAP_UNDEFINED));
                 sRoamerLocation[roamerIndex][MAP_NUM] = mapNum;
                 return;
             }

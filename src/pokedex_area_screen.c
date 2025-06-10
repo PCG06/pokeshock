@@ -36,8 +36,8 @@
 //   determined by the data for the corresponding MAPSEC in gRegionMapEntries.
 
 // Only maps in the following map groups have their encounters considered for the area screen
-#define MAP_GROUP_TOWNS_AND_ROUTES MAP_GROUP(DEMO_TOWN)
-#define MAP_GROUP_SPECIAL_AREA 5//MAP_GROUP(DEMO_TOWN)
+#define MAP_GROUP_TOWNS_AND_ROUTES MAP_GROUP(MAP_DEMO_TOWN)
+#define MAP_GROUP_SPECIAL_AREA 5//MAP_GROUP(MAP_DEMO_TOWN)
 
 #define AREA_SCREEN_WIDTH 32
 #define AREA_SCREEN_HEIGHT 20
@@ -245,7 +245,7 @@ static const struct WindowTemplate sTimeOfDayWindowLabelTemplates[] =
         .baseBlock = 0x16C
     },
 
-    [DEX_AREA_LABEL_AREA_UNKNOWN] = 
+    [DEX_AREA_LABEL_AREA_UNKNOWN] =
     {
         .bg = LABEL_WINDOW_BG,
         .tilemapLeft = 12,
@@ -336,7 +336,7 @@ static void FindMapsWithMon(u16 species)
     }
 
     // Add regular species to the area map
-    for (i = 0; gWildMonHeaders[i].mapGroup != MAP_GROUP(UNDEFINED); i++)
+    for (i = 0; gWildMonHeaders[i].mapGroup != MAP_GROUP(MAP_UNDEFINED); i++)
     {
         if (MapHasSpecies(&gWildMonHeaders[i].encounterTypes[gAreaTimeOfDay], species))
         {

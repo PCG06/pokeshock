@@ -44,6 +44,7 @@
 #include "item.h"
 #include "constants/battle_frontier.h"
 #include "constants/battle_setup.h"
+#include "constants/event_objects.h"
 #include "constants/game_stat.h"
 #include "constants/items.h"
 #include "constants/songs.h"
@@ -933,7 +934,7 @@ void SetMapVarsToTrainerA(void)
 
 void SetMapVarsToTrainerB(void)
 {
-    if (TRAINER_BATTLE_PARAM.objEventLocalIdB != 0)
+    if (TRAINER_BATTLE_PARAM.objEventLocalIdB != LOCALID_NONE)
     {
         gSpecialVar_LastTalked = TRAINER_BATTLE_PARAM.objEventLocalIdB;
         gSelectedObjectEvent = GetObjectEventIdByLocalIdAndMap(TRAINER_BATTLE_PARAM.objEventLocalIdB, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);

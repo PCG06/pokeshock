@@ -287,7 +287,7 @@ static const u32 sFlyTargetIcons_Gfx[] = INCBIN_U32("graphics/pokenav/region_map
 
 static const u8 sMapHealLocations[][3] =
 {
-    [MAPSEC_DEMO_TOWN] = {MAP_GROUP(DEMO_TOWN), MAP_NUM(DEMO_TOWN), HEAL_LOCATION_DEMO_TOWN},
+    [MAPSEC_DEMO_TOWN] = {MAP_GROUP(MAP_DEMO_TOWN), MAP_NUM(MAP_DEMO_TOWN), HEAL_LOCATION_DEMO_TOWN},
 };
 
 static const u8 *const sEverGrandeCityNames[] =

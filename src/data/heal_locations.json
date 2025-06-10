@@ -1,0 +1,16 @@
+{
+  "heal_locations": [
+    {
+      "id": "HEAL_LOCATION_DEMO_TOWN",
+      "map": "MAP_DEMO_TOWN",
+      "x": 14,
+      "y": 9
+    },
+    {
+      "id": "HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST",
+      "map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
+      "x": 3,
+      "y": 52
+    }
+  ]
+}
