@@ -6,11 +6,22 @@ DemoTown_OnTransition:
 	setrespawn HEAL_LOCATION_DEMO_TOWN
 	end
 
+DemoTown_EventScript_Sign_ExpansionDebugMenu::
+	msgbox DemoTown_Text_Sign_ExpansionDebugMenu, MSGBOX_SIGN
+	end
+
+DemoTown_EventScript_Sign_SpriteVisualizer::
+	msgbox DemoTown_Text_Sign_SpriteVisualizer, MSGBOX_SIGN
+	end
+
 DemoTown_Text_Sign_ExpansionDebugMenu:
 	.string "Expansion Tips!\p"
 	.string "Hold {R_BUTTON} while pressing {START_BUTTON} to open\n"
 	.string "the Expansion's overworld debug menu!$"
 
-DemoTown_EventScript_Sign_ExpansionDebugMenu::
-	msgbox DemoTown_Text_Sign_ExpansionDebugMenu, MSGBOX_SIGN
-	end
+DemoTown_Text_Sign_SpriteVisualizer:
+	.string "Expansion Tips!\p"
+	.string "Pressing {SELECT_BUTTON} in a Pokémon's summary will\n"
+	.string "open the Pokémon Sprite Visualizer!\p"
+	.string "You can test your sprite and\n"
+	.string "animation changes there!$"

@@ -8,9 +8,7 @@
   "gMapGroup_TownsAndRoutes": [
     "DemoTown"
   ],
-  "gMapGroup_Dungeons": [
-
-  ],
+  "gMapGroup_Dungeons": [],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
     "SecretBase_BrownCave1",

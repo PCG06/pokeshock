@@ -35,7 +35,7 @@ gText_Birch_YourePlayer::
 
 gText_Birch_AreYouReady::
 	.string "You'll be warped to Demo Town now,\n"
-	.string "But without the shaking from the\l"
+	.string "but without the shaking from the\l"
 	.string "original game's truck sequence.\p"
 	.string "Search for “ExecuteTruckSequence” to\n"
 	.string "see how you can reenable it.\p"

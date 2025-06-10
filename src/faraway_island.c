@@ -9,8 +9,6 @@
 #include "constants/field_effects.h"
 #include "constants/metatile_behaviors.h"
 
-static EWRAM_DATA u8 sGrassSpriteId = 0;
-
 extern const struct SpritePalette gSpritePalette_GeneralFieldEffect1;
 extern const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[];
 
