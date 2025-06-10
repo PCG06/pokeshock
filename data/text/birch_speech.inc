@@ -1,6 +1,6 @@
 gText_Birch_Welcome::
-	.string "Welcome to pokeemerald-expansion's\n"
-	.string "Demo Town for v1.11.3!\p"
+	.string "Welcome to Demo Town for\n"
+	.string "pokeemerald-expansion v1.12.0!\p"
 	.string "This is NOT a game in on itself, but\n"
 	.string "a base for you to make your own games!\p"
 	.string "If you were sold this software,\n"
