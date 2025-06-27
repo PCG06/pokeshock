@@ -21,6 +21,13 @@
       "elevation": 0,
       "dest_map": "MAP_DEMO_TOWN",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_DEMO_TOWN_LIBRARY",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
@@ -31,15 +38,15 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "DemoTown_EventScript_Sign_ExpansionDebugMenu"
+      "script": "DemoTown_Sign_GoToTheLibrary"
     },
     {
       "type": "sign",
-      "x": 10,
-      "y": 8,
+      "x": 14,
+      "y": 25,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "DemoTown_EventScript_Sign_SpriteVisualizer"
+      "script": "DemoTown_Sign_Library"
     }
   ]
 }

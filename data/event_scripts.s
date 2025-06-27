@@ -672,3 +672,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/move_reminder.inc"
 	.include "data/scripts/wall_clock.inc"
 	.include "data/maps/DemoTown/scripts.inc"
+
+	.include "data/maps/DemoTown_Library/scripts.inc"

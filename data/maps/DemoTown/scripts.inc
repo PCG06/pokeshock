@@ -6,22 +6,18 @@ DemoTown_OnTransition:
 	setrespawn HEAL_LOCATION_DEMO_TOWN
 	end
 
-DemoTown_EventScript_Sign_ExpansionDebugMenu::
-	msgbox DemoTown_Text_Sign_ExpansionDebugMenu, MSGBOX_SIGN
+DemoTown_Sign_GoToTheLibrary::
+	msgbox DemoTown_Text_Sign_GoToTheLibrary, MSGBOX_SIGN
 	end
 
-DemoTown_EventScript_Sign_SpriteVisualizer::
-	msgbox DemoTown_Text_Sign_SpriteVisualizer, MSGBOX_SIGN
+DemoTown_Text_Sign_GoToTheLibrary:
+	.string "Expansion Tips!\p"
+	.string "Go to the library to learn information\n"
+	.string "about pokeemerald-expansion!$"
+
+DemoTown_Sign_Library::
+	msgbox DemoTown_Text_Sign_Library, MSGBOX_SIGN
 	end
 
-DemoTown_Text_Sign_ExpansionDebugMenu:
-	.string "Expansion Tips!\p"
-	.string "Hold {R_BUTTON} while pressing {START_BUTTON} to open\n"
-	.string "the Expansion's overworld debug menu!$"
-
-DemoTown_Text_Sign_SpriteVisualizer:
-	.string "Expansion Tips!\p"
-	.string "Pressing {SELECT_BUTTON} in a Pokémon's summary will\n"
-	.string "open the Pokémon Sprite Visualizer!\p"
-	.string "You can test your sprite and\n"
-	.string "animation changes there!$"
+DemoTown_Text_Sign_Library:
+	.string "Library$"

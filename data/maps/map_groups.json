@@ -3,7 +3,8 @@
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
-    "gMapGroup_SpecialArea"
+    "gMapGroup_SpecialArea",
+    "gMapGroup_DemoTown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "DemoTown"
@@ -130,5 +131,8 @@
     "TrainerHill_4F",
     "TrainerHill_Roof",
     "TrainerHill_Elevator"
+  ],
+  "gMapGroup_DemoTown": [
+    "DemoTown_Library"
   ]
 }
