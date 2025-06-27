@@ -68,22 +68,6 @@ static s16 GetTruckCameraBobbingY(int time)
     return 0;
 }
 
-// Determines the frequency that the truck boxes bounce at.
-// The return value of this function is multiplied and added
-// to the boxes resting y offset, the result of which is that
-// when it returns 0 they remain vertically still and when it
-// returns -1 they jump upward.
-// Box 1 has 30 added to the time so it jumps earlier, and
-// box 2 has the return value multiplied by less, so it doesn't
-// jump as high.
-static s16 GetTruckBoxYMovement(int time)
-{
-    if (!((time + 120) % 180))
-        return -1;
-
-    return 0;
-}
-
 #define tTimer data[0]
 
 static void Task_Truck1(u8 taskId)
